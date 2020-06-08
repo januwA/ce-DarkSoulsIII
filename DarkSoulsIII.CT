@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="31">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>36</ID>
+      <Description>"精力"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+aobscanmodule(jl_INJECT,DarkSoulsIII.exe,89 83 F0 00 00 00 48 8B 5C 24 30)
+alloc(newmem,$1000,"DarkSoulsIII.exe"+9D8556)
+
+label(return)
+
+newmem:
+  push eax
+  // 精力
+  mov eax, [rbx+F8] // get 精力 max
+  mov [rbx+F0], eax // set 精力 = 精力 max
+  pop eax
+  jmp return
+
+jl_INJECT:
+  jmp newmem
+  nop
+
+return:
+registersymbol(jl_INJECT)
+
+[DISABLE]
+
+jl_INJECT:
+  db 89 83 F0 00 00 00
+
+unregistersymbol(jl_INJECT)
+dealloc(newmem)
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+9D8556
+
+"DarkSoulsIII.exe"+9D8531: E8 6A 93 43 00        -  call DarkSoulsIII.exe+E118A0
+"DarkSoulsIII.exe"+9D8536: 48 8D 93 F4 00 00 00  -  lea rdx,[rbx+000000F4]
+"DarkSoulsIII.exe"+9D853D: 48 8B 48 60           -  mov rcx,[rax+60]
+"DarkSoulsIII.exe"+9D8541: 48 83 C1 4C           -  add rcx,4C
+"DarkSoulsIII.exe"+9D8545: 3B 39                 -  cmp edi,[rcx]
+"DarkSoulsIII.exe"+9D8547: 7C 0B                 -  jl DarkSoulsIII.exe+9D8554
+"DarkSoulsIII.exe"+9D8549: 3B 3A                 -  cmp edi,[rdx]
+"DarkSoulsIII.exe"+9D854B: 48 8D 4C 24 38        -  lea rcx,[rsp+38]
+"DarkSoulsIII.exe"+9D8550: 48 0F 4F CA           -  cmovg rcx,rdx
+"DarkSoulsIII.exe"+9D8554: 8B 01                 -  mov eax,[rcx]
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+9D8556: 89 83 F0 00 00 00     -  mov [rbx+000000F0],eax
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+9D855C: 48 8B 5C 24 30        -  mov rbx,[rsp+30]
+"DarkSoulsIII.exe"+9D8561: 48 83 C4 20           -  add rsp,20
+"DarkSoulsIII.exe"+9D8565: 5F                    -  pop rdi
+"DarkSoulsIII.exe"+9D8566: C3                    -  ret 
+"DarkSoulsIII.exe"+9D8567: 48 8D 64 24 08        -  lea rsp,[rsp+08]
+"DarkSoulsIII.exe"+9D856C: FF 64 24 F8           -  jmp qword ptr [rsp-08]
+"DarkSoulsIII.exe"+9D8570: 48 89 5C 24 08        -  mov [rsp+08],rbx
+"DarkSoulsIII.exe"+9D8575: 48 89 6C 24 10        -  mov [rsp+10],rbp
+"DarkSoulsIII.exe"+9D857A: 48 89 74 24 18        -  mov [rsp+18],rsi
+"DarkSoulsIII.exe"+9D857F: 57                    -  push rdi
+}
+      </AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>50</ID>
+      <Description>"耐久"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+aobscanmodule(NaiJiu_INJECT,DarkSoulsIII.exe,89 51 10 C3 83 A5 24 01 00 00 BF)
+alloc(newmem,$1000,"DarkSoulsIII.exe"+A259C0)
+
+label(return)
+
+newmem:
+  // mov [rcx+10],edx
+  mov [rcx+10],(int)50
+  ret 
+  and dword ptr [rbp+00000124],-41
+  jmp return
+
+NaiJiu_INJECT:
+  jmp newmem
+  nop 6
+return:
+registersymbol(NaiJiu_INJECT)
+
+[DISABLE]
+
+NaiJiu_INJECT:
+  db 89 51 10 C3 83 A5 24 01 00 00 BF
+
+unregistersymbol(NaiJiu_INJECT)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+A259C0
+
+"DarkSoulsIII.exe"+A2599E: 48 8B D7              -  mov rdx,rdi
+"DarkSoulsIII.exe"+A259A1: 48 8B 5C 24 30        -  mov rbx,[rsp+30]
+"DarkSoulsIII.exe"+A259A6: 48 83 C4 20           -  add rsp,20
+"DarkSoulsIII.exe"+A259AA: 5F                    -  pop rdi
+"DarkSoulsIII.exe"+A259AB: 48 FF 60 10           -  jmp qword ptr [rax+10]
+"DarkSoulsIII.exe"+A259AF: 90                    -  nop 
+"DarkSoulsIII.exe"+A259B0: 89 51 14              -  mov [rcx+14],edx
+"DarkSoulsIII.exe"+A259B3: C3                    -  ret 
+"DarkSoulsIII.exe"+A259B4: 48 8D 15 E5 A1 DF 01  -  lea rdx,[DarkSoulsIII.exe+281FBA0]
+"DarkSoulsIII.exe"+A259BB: E9 22 CF 4E 00        -  jmp DarkSoulsIII.exe+F128E2
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+A259C0: 89 51 10              -  mov [rcx+10],edx
+"DarkSoulsIII.exe"+A259C3: C3                    -  ret 
+"DarkSoulsIII.exe"+A259C4: 83 A5 24 01 00 00 BF  -  and dword ptr [rbp+00000124],-41
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+A259CB: E9 07 10 4A 05        -  jmp DarkSoulsIII.exe+5EC69D7
+"DarkSoulsIII.exe"+A259D0: 48 89 5C 24 08        -  mov [rsp+08],rbx
+"DarkSoulsIII.exe"+A259D5: 48 89 74 24 18        -  mov [rsp+18],rsi
+"DarkSoulsIII.exe"+A259DA: 48 89 54 24 10        -  mov [rsp+10],rdx
+"DarkSoulsIII.exe"+A259DF: 57                    -  push rdi
+"DarkSoulsIII.exe"+A259E0: 48 83 EC 20           -  sub rsp,20
+"DarkSoulsIII.exe"+A259E4: 33 F6                 -  xor esi,esi
+"DarkSoulsIII.exe"+A259E6: 39 15 24 C4 B7 03     -  cmp [DarkSoulsIII.exe+45A1E10],edx
+"DarkSoulsIII.exe"+A259EC: 48 8B F9              -  mov rdi,rcx
+"DarkSoulsIII.exe"+A259EF: 75 12                 -  jne DarkSoulsIII.exe+A25A03
+}
+      </AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>53</ID>
+      <Description>"一刀秒"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+aobscanmodule(hp_INJECT,DarkSoulsIII.exe,89 83 D8 00 00 00 E9 E1)
+alloc(newmem,$1000,"DarkSoulsIII.exe"+451065)
+
+// 改为0，npc也会被秒掉(重新登录还会刷出来)，实在找不到差异了
+define(closeGuai, 1)
+
+label(return)
+label(myhp)
+label(setMyHpEnd)
+label(otherhp)
+label(setOtherHpEnd)
+
+newmem:
+   pushf
+   // +10 只有我==0，有血条的都会被秒
+   cmp [rbx+10],0 // 找差异
+   je myhp
+   jmp otherhp
+
+myhp:
+   push rcx
+   mov rcx,[rbx+DC] // max
+   cmp [rbx+D8],rcx
+   je setMyHpEnd // hp == max hp
+   mov [rbx+D8], rcx
+   jmp setMyHpEnd
+
+setMyHpEnd:
+   pop rcx
+   popf
+   jmp return
+
+otherhp:
+   cmp [rbx+D8], closeGuai
+   je setOtherHpEnd
+   mov [rbx+D8], closeGuai
+   jmp setOtherHpEnd
+
+setOtherHpEnd:
+   popf
+   jmp return
+
+hp_INJECT:
+  jmp newmem
+  nop
+return:
+registersymbol(hp_INJECT)
+
+[DISABLE]
+hp_INJECT:
+  db 89 83 D8 00 00 00
+
+unregistersymbol(hp_INJECT)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+451065
+
+"DarkSoulsIII.exe"+45104A: 44 0F 28 44 24 40              -  movaps xmm8,[rsp+40]
+"DarkSoulsIII.exe"+451050: 44 0F 28 4C 24 30              -  movaps xmm9,[rsp+30]
+"DarkSoulsIII.exe"+451056: 48 83 C4 50                    -  add rsp,50
+"DarkSoulsIII.exe"+45105A: 5E                             -  pop rsi
+"DarkSoulsIII.exe"+45105B: C3                             -  ret 
+"DarkSoulsIII.exe"+45105C: CC                             -  int 3 
+"DarkSoulsIII.exe"+45105D: 48 8D 4B C2                    -  lea rcx,[rbx-3E]
+"DarkSoulsIII.exe"+451061: 00 00                          -  add [rax],al
+"DarkSoulsIII.exe"+451063: 55                             -  push rbp
+"DarkSoulsIII.exe"+451064: 59                             -  pop rcx
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+451065: 89 83 D8 00 00 00              -  mov [rbx+000000D8],eax
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+45106B: E9 E1 6E 58 00                 -  jmp DarkSoulsIII.exe+9D7F51
+"DarkSoulsIII.exe"+451070: 4C 89 44 24 18                 -  mov [rsp+18],r8
+"DarkSoulsIII.exe"+451075: 48 83 EC 38                    -  sub rsp,38
+"DarkSoulsIII.exe"+451079: 48 C7 44 24 20 FE FF FF FF     -  mov qword ptr [rsp+20],FFFFFFFFFFFFFFFE
+"DarkSoulsIII.exe"+451082: 48 3B CA                       -  cmp rcx,rdx
+"DarkSoulsIII.exe"+451085: 74 23                          -  je DarkSoulsIII.exe+4510AA
+"DarkSoulsIII.exe"+451087: 4C 89 44 24 28                 -  mov [rsp+28],r8
+"DarkSoulsIII.exe"+45108C: 4D 85 C0                       -  test r8,r8
+"DarkSoulsIII.exe"+45108F: 74 05                          -  je DarkSoulsIII.exe+451096
+"DarkSoulsIII.exe"+451091: 8B 01                          -  mov eax,[rcx]
+}
+      </AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>61</ID>
+      <Description>"灵魂"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+aobscanmodule(lh_INJECT,DarkSoulsIII.exe,89 41 74 C3 48 8D 64 24 08) // should be unique
+alloc(newmem,$1000,"DarkSoulsIII.exe"+465D73)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  // mov [rcx+74],eax
+  mov [rcx+74],#9999999
+  ret 
+  lea rsp,[rsp+08]
+  jmp return
+
+lh_INJECT:
+  jmp newmem
+  nop 4
+return:
+registersymbol(lh_INJECT)
+
+[DISABLE]
+
+lh_INJECT:
+  db 89 41 74 C3 48 8D 64 24 08
+
+unregistersymbol(lh_INJECT)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+465D73
+
+"DarkSoulsIII.exe"+465D4E: 79 0B                    -  jns DarkSoulsIII.exe+465D5B
+"DarkSoulsIII.exe"+465D50: 48 8D 44 24 08           -  lea rax,[rsp+08]
+"DarkSoulsIII.exe"+465D55: 8B 00                    -  mov eax,[rax]
+"DarkSoulsIII.exe"+465D57: 89 41 74                 -  mov [rcx+74],eax
+"DarkSoulsIII.exe"+465D5A: C3                       -  ret 
+"DarkSoulsIII.exe"+465D5B: 3B 15 13 CD 34 02        -  cmp edx,[DarkSoulsIII.exe+27B2A74]
+"DarkSoulsIII.exe"+465D61: 4C 8D 05 0C CD 34 02     -  lea r8,[DarkSoulsIII.exe+27B2A74]
+"DarkSoulsIII.exe"+465D68: 48 8D 44 24 10           -  lea rax,[rsp+10]
+"DarkSoulsIII.exe"+465D6D: 49 0F 4F C0              -  cmovg rax,r8
+"DarkSoulsIII.exe"+465D71: 8B 00                    -  mov eax,[rax]
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+465D73: 89 41 74                 -  mov [rcx+74],eax
+"DarkSoulsIII.exe"+465D76: C3                       -  ret 
+"DarkSoulsIII.exe"+465D77: 48 8D 64 24 08           -  lea rsp,[rsp+08]
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+465D7C: FF 64 24 F8              -  jmp qword ptr [rsp-08]
+"DarkSoulsIII.exe"+465D80: 48 89 74 24 10           -  mov [rsp+10],rsi
+"DarkSoulsIII.exe"+465D85: 57                       -  push rdi
+"DarkSoulsIII.exe"+465D86: 48 83 EC 60              -  sub rsp,60
+"DarkSoulsIII.exe"+465D8A: 48 8B F1                 -  mov rsi,rcx
+"DarkSoulsIII.exe"+465D8D: 48 8B 0D 4C 07 2D 04     -  mov rcx,[DarkSoulsIII.exe+47364E0]
+"DarkSoulsIII.exe"+465D94: 48 85 C9                 -  test rcx,rcx
+"DarkSoulsIII.exe"+465D97: 75 26                    -  jne DarkSoulsIII.exe+465DBF
+"DarkSoulsIII.exe"+465D99: 4C 8D 0D C8 16 2F 02     -  lea r9,[DarkSoulsIII.exe+2757468]
+"DarkSoulsIII.exe"+465DA0: 4C 8D 05 79 63 8F 03     -  lea r8,[DarkSoulsIII.exe+3D5C120]
+}
+      </AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>90</ID>
+      <Description>"等级"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>7FF49E85F510</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>65</ID>
+      <Description>"材料"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+aobscanmodule(cl2_INJECT,DarkSoulsIII.exe,3B FE 76 09 8B FE)
+alloc(newmem,$1000,"DarkSoulsIII.exe"+58A296)
+
+label(return)
+
+newmem:
+  // 当前材料&gt;=最大值 跳
+  cmp edi,esi
+  // jna DarkSoulsIII.exe+58A2A1
+  mov edi,esi
+  jmp return
+
+cl2_INJECT:
+  jmp newmem
+  nop 6
+return:
+registersymbol(cl2_INJECT)
+
+[DISABLE]
+
+cl2_INJECT:
+  db 3B FE 76 09 8B FE
+
+unregistersymbol(cl2_INJECT)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+58A296
+
+"DarkSoulsIII.exe"+58A272: 80 BF 8C 00 00 00 00        -  cmp byte ptr [rdi+0000008C],00
+"DarkSoulsIII.exe"+58A279: 74 07                       -  je DarkSoulsIII.exe+58A282
+"DarkSoulsIII.exe"+58A27B: E8 D0 78 49 00              -  call DarkSoulsIII.exe+A21B50
+"DarkSoulsIII.exe"+58A280: EB 05                       -  jmp DarkSoulsIII.exe+58A287
+"DarkSoulsIII.exe"+58A282: E8 A9 76 49 00              -  call DarkSoulsIII.exe+A21930
+"DarkSoulsIII.exe"+58A287: 8B F0                       -  mov esi,eax
+"DarkSoulsIII.exe"+58A289: 48 8B CB                    -  mov rcx,rbx
+"DarkSoulsIII.exe"+58A28C: E8 3F C1 49 00              -  call DarkSoulsIII.exe+A263D0
+"DarkSoulsIII.exe"+58A291: 8D 3C 28                    -  lea edi,[rax+rbp]
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+58A294: 3B FE                       -  cmp edi,esi
+"DarkSoulsIII.exe"+58A296: 76 09                       -  jna DarkSoulsIII.exe+58A2A1
+"DarkSoulsIII.exe"+58A298: 8B FE                       -  mov edi,esi
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+58A29A: 41 C7 06 01 00 00 00        -  mov [r14],00000001
+"DarkSoulsIII.exe"+58A2A1: 8B D7                       -  mov edx,edi
+"DarkSoulsIII.exe"+58A2A3: 48 8B CB                    -  mov rcx,rbx
+"DarkSoulsIII.exe"+58A2A6: E8 75 C2 49 00              -  call DarkSoulsIII.exe+A26520
+"DarkSoulsIII.exe"+58A2AB: 90                          -  nop 
+"DarkSoulsIII.exe"+58A2AC: 48 8D 4C 24 28              -  lea rcx,[rsp+28]
+"DarkSoulsIII.exe"+58A2B1: E8 8A 73 49 00              -  call DarkSoulsIII.exe+A21640
+"DarkSoulsIII.exe"+58A2B6: 8B C7                       -  mov eax,edi
+"DarkSoulsIII.exe"+58A2B8: EB 02                       -  jmp DarkSoulsIII.exe+58A2BC
+"DarkSoulsIII.exe"+58A2BA: 33 C0                       -  xor eax,eax
+"DarkSoulsIII.exe"+58A2BC: 48 8B 5C 24 50              -  mov rbx,[rsp+50]
+}
+      </AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>91</ID>
+      <Description>"材料2"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+"DarkSoulsIII.exe"+58A296:
+  db 90 90
+
+[DISABLE]
+"DarkSoulsIII.exe"+58A296:
+  db 76 09
+
+{
+  DarkSoulsIII.exe+58A296 - 76 09  - jna DarkSoulsIII.exe+58A2A1
+}
+      </AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>95</ID>
+      <Description>"自动回血，别和一刀秒同时开"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+aobscanmodule(hpHf_INJECT,DarkSoulsIII.exe,89 83 D8 00 00 00 E9 E1)
+alloc(newmem,$1000,"DarkSoulsIII.exe"+451065)
+
+alloc(imyhp,$100,"DarkSoulsIII.exe"+451065)
+registersymbol(imyhp)
+imyhp:
+ dq 0
+
+label(return)
+label(origencode)
+
+newmem:
+  pushf
+  cmp [rbx+10],0
+  jne origencode
+  cmp [imyhp], 0
+  jne origencode
+  mov [imyhp],rbx
+  jmp origencode
+
+origencode:
+  popf
+  mov [rbx+D8],eax
+  jmp return
+
+hpHf_INJECT:
+  jmp newmem
+  nop
+return:
+
+registersymbol(hpHf_INJECT)
+
+[DISABLE]
+hpHf_INJECT:
+  db 89 83 D8 00 00 00
+
+unregistersymbol(imyhp)
+dealloc(imyhp)
+unregistersymbol(hpHf_INJECT)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+451065
+
+"DarkSoulsIII.exe"+45104A: 44 0F 28 44 24 40              -  movaps xmm8,[rsp+40]
+"DarkSoulsIII.exe"+451050: 44 0F 28 4C 24 30              -  movaps xmm9,[rsp+30]
+"DarkSoulsIII.exe"+451056: 48 83 C4 50                    -  add rsp,50
+"DarkSoulsIII.exe"+45105A: 5E                             -  pop rsi
+"DarkSoulsIII.exe"+45105B: C3                             -  ret 
+"DarkSoulsIII.exe"+45105C: CC                             -  int 3 
+"DarkSoulsIII.exe"+45105D: 48 8D 4B C2                    -  lea rcx,[rbx-3E]
+"DarkSoulsIII.exe"+451061: 00 00                          -  add [rax],al
+"DarkSoulsIII.exe"+451063: 55                             -  push rbp
+"DarkSoulsIII.exe"+451064: 59                             -  pop rcx
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+451065: 89 83 D8 00 00 00              -  mov [rbx+000000D8],eax
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+45106B: E9 E1 6E 58 00                 -  jmp DarkSoulsIII.exe+9D7F51
+"DarkSoulsIII.exe"+451070: 4C 89 44 24 18                 -  mov [rsp+18],r8
+"DarkSoulsIII.exe"+451075: 48 83 EC 38                    -  sub rsp,38
+"DarkSoulsIII.exe"+451079: 48 C7 44 24 20 FE FF FF FF     -  mov qword ptr [rsp+20],FFFFFFFFFFFFFFFE
+"DarkSoulsIII.exe"+451082: 48 3B CA                       -  cmp rcx,rdx
+"DarkSoulsIII.exe"+451085: 74 23                          -  je DarkSoulsIII.exe+4510AA
+"DarkSoulsIII.exe"+451087: 4C 89 44 24 28                 -  mov [rsp+28],r8
+"DarkSoulsIII.exe"+45108C: 4D 85 C0                       -  test r8,r8
+"DarkSoulsIII.exe"+45108F: 74 05                          -  je DarkSoulsIII.exe+451096
+"DarkSoulsIII.exe"+451091: 8B 01                          -  mov eax,[rcx]
+}
+      </AssemblerScript>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>96</ID>
+          <Description>"my hp"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>[imyhp]+d8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>98</ID>
+          <Description>"自动回血"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+alloc(hpregen,$1000)
+registersymbol(hpregen)
+createThread(hpregen)
+
+label(mainloop)
+label(dispose)
+label(end)
+registersymbol(end)
+
+hpregen:
+  sub rsp,20
+  jmp mainloop
+
+mainloop:
+  mov rcx,#500
+  call Sleep
+
+  push rax
+  mov rax,[imyhp]
+  add [rax+d8], #100
+  pop rax
+
+
+  cmp [end],0
+  je mainloop
+  jmp dispose
+
+dispose:
+  add rsp,20
+  mov rcx,hpregen
+  sub rdx,rdx
+  mov r8d,8000
+  jmp VirtualFree
+  ret
+
+end:
+  dd 0
+
+[DISABLE]
+end:
+  dd 1
+
+unregistersymbol(end)
+unregistersymbol(hpregen)
+          </AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <CheatCodes>
+    <CodeEntry Color="20000000">
+      <Description>代码 :mov [r15+00000088],ecx</Description>
+      <AddressString>DarkSoulsIII.exe+100DE64</AddressString>
+      <Before>
+        <Byte>CA</Byte>
+        <Byte>0F</Byte>
+        <Byte>59</Byte>
+        <Byte>C1</Byte>
+        <Byte>C3</Byte>
+      </Before>
+      <Actual>
+        <Byte>41</Byte>
+        <Byte>89</Byte>
+        <Byte>8F</Byte>
+        <Byte>88</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>E9</Byte>
+        <Byte>75</Byte>
+        <Byte>2A</Byte>
+        <Byte>B1</Byte>
+        <Byte>00</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry Color="20000000">
+      <Description>消耗武器耐久</Description>
+      <AddressString>DarkSoulsIII.exe+A259C0</AddressString>
+      <Before>
+        <Byte>E9</Byte>
+        <Byte>22</Byte>
+        <Byte>CF</Byte>
+        <Byte>4E</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>51</Byte>
+        <Byte>10</Byte>
+      </Actual>
+      <After>
+        <Byte>C3</Byte>
+        <Byte>83</Byte>
+        <Byte>A5</Byte>
+        <Byte>24</Byte>
+        <Byte>01</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry Color="20000000">
+      <Description>改变hp指令</Description>
+      <AddressString>DarkSoulsIII.exe+451065</AddressString>
+      <Before>
+        <Byte>C2</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>55</Byte>
+        <Byte>59</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>83</Byte>
+        <Byte>D8</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>E9</Byte>
+        <Byte>E1</Byte>
+        <Byte>6E</Byte>
+        <Byte>58</Byte>
+        <Byte>00</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry Color="20000000">
+      <Description>背包道具数量</Description>
+      <AddressString>DarkSoulsIII.exe+A263D0</AddressString>
+      <Before>
+        <Byte>E9</Byte>
+        <Byte>32</Byte>
+        <Byte>5D</Byte>
+        <Byte>1E</Byte>
+        <Byte>05</Byte>
+      </Before>
+      <Actual>
+        <Byte>8B</Byte>
+        <Byte>41</Byte>
+        <Byte>08</Byte>
+      </Actual>
+      <After>
+        <Byte>C3</Byte>
+        <Byte>48</Byte>
+        <Byte>8B</Byte>
+        <Byte>9D</Byte>
+        <Byte>00</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry Color="20000000">
+      <Description>消耗背包材料时</Description>
+      <AddressString>DarkSoulsIII.exe+A26520</AddressString>
+      <Before>
+        <Byte>E9</Byte>
+        <Byte>75</Byte>
+        <Byte>AC</Byte>
+        <Byte>0F</Byte>
+        <Byte>01</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>51</Byte>
+        <Byte>08</Byte>
+      </Actual>
+      <After>
+        <Byte>C3</Byte>
+        <Byte>83</Byte>
+        <Byte>05</Byte>
+        <Byte>7F</Byte>
+        <Byte>7B</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry Color="20000000">
+      <Description>负重</Description>
+      <AddressString>DarkSoulsIII.exe+7678B0</AddressString>
+      <Before>
+        <Byte>C6</Byte>
+        <Byte>7A</Byte>
+        <Byte>02</Byte>
+        <Byte>74</Byte>
+        <Byte>4F</Byte>
+      </Before>
+      <Actual>
+        <Byte>F3</Byte>
+        <Byte>0F</Byte>
+        <Byte>11</Byte>
+        <Byte>31</Byte>
+      </Actual>
+      <After>
+        <Byte>66</Byte>
+        <Byte>89</Byte>
+        <Byte>59</Byte>
+        <Byte>04</Byte>
+        <Byte>48</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
+  <UserdefinedSymbols/>
+  <Comments>00007FF49E860000 + 8 = 5F
+00007FF49E85FED0 + 8 = 1
+  </Comments>
+  <DisassemblerComments>
+    <DisassemblerComment>
+      <Address>"DarkSoulsIII.exe"+451065</Address>
+      <Comment>改变hp
+      </Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DarkSoulsIII.exe"+4BAF93</Address>
+      <Comment>靠近门，触发这个
+      </Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DarkSoulsIII.exe"+58A294</Address>
+      <Comment>材料&lt;99 跳
+      </Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DarkSoulsIII.exe"+7678B0</Address>
+      <Comment>负重
+      </Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DarkSoulsIII.exe"+A259C0</Address>
+      <Comment>消耗武器耐久
+      </Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DarkSoulsIII.exe"+A263D0</Address>
+      <Comment>背包道具数量
+      </Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DarkSoulsIII.exe"+A26520</Address>
+      <Comment>消耗背包材料时
+      </Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DarkSoulsIII.exe"+A26523</Address>
+      <Comment>0014F668(rsp+0)      - 000000014058A2AB     - (pointer)DarkSoulsIII.exe+58A2AB
+      </Comment>
+    </DisassemblerComment>
+  </DisassemblerComments>
+</CheatTable>

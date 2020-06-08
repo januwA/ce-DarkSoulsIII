@@ -1,0 +1,936 @@
+Offset-Description                                                                   
+0000 - Pointer           7FF4ACCC20D0 : P->142889988   7FF4AF8A05D0 : P->142889988   
+0008 - Pointer to instance of NS_SPRJ::PlayerIns7FF4ACCC20D8 : P->7FF4ACCBEED07FF4AF8A05D8 : P->7FF4AC7191D0
+0010 - 4 Bytes           7FF4ACCC20E0 : 0              7FF4AF8A05E0 : 4246982176     
+0014 - 4 Bytes           7FF4ACCC20E4 : 0              7FF4AF8A05E4 : 32756          
+0018 - 4 Bytes           7FF4ACCC20E8 : 4294967295     7FF4AF8A05E8 : 4603           
+001C - 4 Bytes           7FF4ACCC20EC : 4294967295     7FF4AF8A05EC : 16             
+0020 - 4 Bytes           7FF4ACCC20F0 : 4294967295     7FF4AF8A05F0 : 27300          
+0024 - 4 Bytes           7FF4ACCC20F4 : 0              7FF4AF8A05F4 : 0              
+0028 - Pointer           7FF4ACCC20F8 : P->7FF4ACCC21187FF4AF8A05F8 : P->7FF4AF8A0618
+0030 - 4 Bytes           7FF4ACCC2100 : 0              7FF4AF8A0600 : 999999         
+0034 - 4 Bytes           7FF4ACCC2104 : 0              7FF4AF8A0604 : 999999         
+0038 - 4 Bytes           7FF4ACCC2108 : 5              7FF4AF8A0608 : 5              
+003C - 4 Bytes           7FF4ACCC210C : 0              7FF4AF8A060C : 0              
+0040 - 4 Bytes           7FF4ACCC2110 : 63             7FF4AF8A0610 : 63             
+0044 - 4 Bytes           7FF4ACCC2114 : 0              7FF4AF8A0614 : 0              
+0048 - Unicode String    7FF4ACCC2118 : c00            7FF4AF8A0618 : c00            
+004E - Byte              7FF4ACCC211E : 48             7FF4AF8A061E : 48             
+004F - Byte              7FF4ACCC211F : 0              7FF4AF8A061F : 0              
+0050 - 4 Bytes           7FF4ACCC2120 : 48             7FF4AF8A0620 : 48             
+0054 - 4 Bytes           7FF4ACCC2124 : 1              7FF4AF8A0624 : 1              
+0058 - 4 Bytes           7FF4ACCC2128 : 48             7FF4AF8A0628 : 48             
+005C - 4 Bytes           7FF4ACCC212C : 0              7FF4AF8A062C : 0              
+0060 - Pointer           7FF4ACCC2130 : P->1417D9802   7FF4AF8A0630 : P->140E9814B   
+0068 - 4 Bytes           7FF4ACCC2138 : 8              7FF4AF8A0638 : 8              
+006C - 4 Bytes           7FF4ACCC213C : 0              7FF4AF8A063C : 0              
+0070 - Pointer           7FF4ACCC2140 : P->14178852E   7FF4AF8A0640 : P->14178852E   
+0078 - Pointer           7FF4ACCC2148 : P->14463BFA8   7FF4AF8A0648 : P->14463BFA8   
+0080 - Pointer to instance of AppMenu::FeEmergencyNotice7FF4ACCC2150 : P->7FF49171E9407FF4AF8A0650 : P->7FF49E2595B8
+0088 - Pointer           7FF4ACCC2158 : P->7FF4ACCC20B07FF4AF8A0658 : P->7FF4AF91BB70
+0090 - Pointer           7FF4ACCC2160 : P->14463BFA8   7FF4AF8A0660 : P->14463BFA8   
+0098 - 4 Bytes           7FF4ACCC2168 : 8              7FF4AF8A0668 : 8              
+009C - Double            7FF4ACCC216C : 52234.34375    7FF4AF8A066C : 52234.34375    
+00A4 - 4 Bytes           7FF4ACCC2174 : 1              7FF4AF8A0674 : 1              
+00A8 - 4 Bytes           7FF4ACCC2178 : 8              7FF4AF8A0678 : 8              
+00AC - 4 Bytes           7FF4ACCC217C : 0              7FF4AF8A067C : 0              
+00B0 - Pointer           7FF4ACCC2180 : P->0014F650    7FF4AF8A0680 : P->0014F5C0    
+00B8 - Pointer           7FF4ACCC2188 : P->14463BFA8   7FF4AF8A0688 : P->14463BFA8   
+00C0 - Pointer           7FF4ACCC2190 : P->14463BFA8   7FF4AF8A0690 : P->14463BFA8   
+00C8 - 4 Bytes (Hex)     7FF4ACCC2198 : 0000FEFE       7FF4AF8A0698 : FFFFFEFE       
+00CC - 4 Bytes           7FF4ACCC219C : 0              7FF4AF8A069C : 4294967295     
+00D0 - 4 Bytes           7FF4ACCC21A0 : 1              7FF4AF8A06A0 : 999937         
+00D4 - 4 Bytes           7FF4ACCC21A4 : 0              7FF4AF8A06A4 : 999999         
+00D8 - 4 Bytes           7FF4ACCC21A8 : 454            7FF4AF8A06A8 : 1000           
+00DC - 4 Bytes           7FF4ACCC21AC : 454            7FF4AF8A06AC : 1000           
+00E0 - 4 Bytes           7FF4ACCC21B0 : 454            7FF4AF8A06B0 : 1000           
+00E4 - 4 Bytes           7FF4ACCC21B4 : 93             7FF4AF8A06B4 : 98             
+00E8 - 4 Bytes           7FF4ACCC21B8 : 93             7FF4AF8A06B8 : 98             
+00EC - 4 Bytes           7FF4ACCC21BC : 93             7FF4AF8A06BC : 98             
+00F0 - 4 Bytes           7FF4ACCC21C0 : 95             7FF4AF8A06C0 : 122            
+00F4 - 4 Bytes           7FF4ACCC21C4 : 95             7FF4AF8A06C4 : 122            
+00F8 - 4 Bytes           7FF4ACCC21C8 : 95             7FF4AF8A06C8 : 122            
+00FC - 4 Bytes           7FF4ACCC21CC : 454            7FF4AF8A06CC : 1000           
+0100 - 4 Bytes           7FF4ACCC21D0 : 93             7FF4AF8A06D0 : 98             
+0104 - Double            7FF4ACCC21D4 : 0.00001159533717FF4AF8A06D4 : 1.75532440145624E-13
+010C - 4 Bytes           7FF4ACCC21DC : 0              7FF4AF8A06DC : 4294967295     
+0110 - Pointer           7FF4ACCC21E0 : P->7FF4ACCC22007FF4AF8A06E0 : P->7FF4AF8A0700
+0118 - 4 Bytes           7FF4ACCC21E8 : 0              7FF4AF8A06E8 : 4294967295     
+011C - 4 Bytes           7FF4ACCC21EC : 0              7FF4AF8A06EC : 4294967295     
+0120 - 4 Bytes           7FF4ACCC21F0 : 5              7FF4AF8A06F0 : 10             
+0124 - 4 Bytes           7FF4ACCC21F4 : 0              7FF4AF8A06F4 : 0              
+0128 - 4 Bytes           7FF4ACCC21F8 : 63             7FF4AF8A06F8 : 63             
+012C - 4 Bytes           7FF4ACCC21FC : 0              7FF4AF8A06FC : 0              
+0130 - Unicode String    7FF4ACCC2200 : c00            7FF4AF8A0700 : c00            
+0136 - Byte              7FF4ACCC2206 : 48             7FF4AF8A0706 : 48             
+0137 - Byte              7FF4ACCC2207 : 0              7FF4AF8A0707 : 0              
+0138 - 4 Bytes           7FF4ACCC2208 : 48             7FF4AF8A0708 : 6225968        
+013C - 4 Bytes           7FF4ACCC220C : 1              7FF4AF8A070C : 3145776        
+0140 - 4 Bytes           7FF4ACCC2210 : 48             7FF4AF8A0710 : 3276849        
+0144 - 4 Bytes           7FF4ACCC2214 : 0              7FF4AF8A0714 : 0              
+0148 - Pointer           7FF4ACCC2218 : P->1417D9802   7FF4AF8A0718 : P->140E9814B   
+0150 - 4 Bytes           7FF4ACCC2220 : 8              7FF4AF8A0720 : 8              
+0154 - 4 Bytes           7FF4ACCC2224 : 0              7FF4AF8A0724 : 0              
+0158 - Pointer           7FF4ACCC2228 : P->14178852E   7FF4AF8A0728 : P->14178852E   
+0160 - Pointer           7FF4ACCC2230 : P->14463BFA8   7FF4AF8A0730 : P->14463BFA8   
+0168 - Pointer to instance of AppMenu::FeEmergencyNotice7FF4ACCC2238 : P->7FF49171E9407FF4AF8A0738 : P->7FF49E2595B8
+0170 - Pointer           7FF4ACCC2240 : P->7FF4ACCC20B07FF4AF8A0740 : P->7FF4AF91BB70
+0178 - Pointer           7FF4ACCC2248 : P->1400109EC   7FF4AF8A0748 : P->1400109EC   
+0180 - 4 Bytes           7FF4ACCC2250 : 8              7FF4AF8A0750 : 8              
+0184 - Double            7FF4ACCC2254 : 52234.34375    7FF4AF8A0754 : 52234.34375    
+018C - 4 Bytes           7FF4ACCC225C : 1              7FF4AF8A075C : 1              
+0190 - 4 Bytes           7FF4ACCC2260 : 8              7FF4AF8A0760 : 8              
+0194 - 4 Bytes           7FF4ACCC2264 : 0              7FF4AF8A0764 : 0              
+0198 - Pointer           7FF4ACCC2268 : P->0014F650    7FF4AF8A0768 : P->0014F5C0    
+01A0 - Pointer           7FF4ACCC2270 : P->7FF4ACCC21187FF4AF8A0770 : P->7FF4AF8A0618
+01A8 - 4 Bytes           7FF4ACCC2278 : 4294967294     7FF4AF8A0778 : 4294967294     
+01AC - 4 Bytes           7FF4ACCC227C : 4294967295     7FF4AF8A077C : 4294967295     
+01B0 - 4 Bytes (Hex)     7FF4ACCC2280 : 0000FAA0       7FF4AF8A0780 : 0000FA40       
+01B4 - 4 Bytes           7FF4ACCC2284 : 0              7FF4AF8A0784 : 3000000        
+01B8 - 4 Bytes           7FF4ACCC2288 : 1              7FF4AF8A0788 : 2945056769     
+01BC - 4 Bytes           7FF4ACCC228C : 0              7FF4AF8A078C : 32756          
+01C0 - 4 Bytes           7FF4ACCC2290 : 0              7FF4AF8A0790 : 4294967232     
+01C4 - 4 Bytes           7FF4ACCC2294 : 0              7FF4AF8A0794 : 30             
+01C8 - Pointer           7FF4ACCC2298 : P->7FF4ACCC22F37FF4AF8A0798 : P->7FF4AF8A0963
+01D0 - Pointer           7FF4ACCC22A0 : P->14288A650   7FF4AF8A07A0 : P->00000000    
+01D8 - Pointer to instance of NS_SPRJ::PlayerIns7FF4ACCC22A8 : P->7FF4ACCBEED07FF4AF8A07A8 : P->00000000    
+01E0 - 4 Bytes           7FF4ACCC22B0 : 197            7FF4AF8A07B0 : 0              
+01E4 - 4 Bytes           7FF4ACCC22B4 : 197            7FF4AF8A07B4 : 0              
+01E8 - 4 Bytes           7FF4ACCC22B8 : 95             7FF4AF8A07B8 : 0              
+01EC - 4 Bytes           7FF4ACCC22BC : 165            7FF4AF8A07BC : 0              
+01F0 - 4 Bytes           7FF4ACCC22C0 : 198            7FF4AF8A07C0 : 0              
+01F4 - 4 Bytes           7FF4ACCC22C4 : 197            7FF4AF8A07C4 : 0              
+01F8 - 4 Bytes           7FF4ACCC22C8 : 197            7FF4AF8A07C8 : 0              
+01FC - 4 Bytes           7FF4ACCC22CC : 216            7FF4AF8A07CC : 0              
+0200 - 4 Bytes           7FF4ACCC22D0 : 165            7FF4AF8A07D0 : 0              
+0204 - Double            7FF4ACCC22D4 : 4.86877205219137FF4AF8A07D4 : 0              
+020C - Float             7FF4ACCC22DC : 0.07295560837  7FF4AF8A07DC : 0              
+0210 - Float             7FF4ACCC22E0 : 0.1268488169   7FF4AF8A07E0 : 0              
+0214 - Float             7FF4ACCC22E4 : 0.0549737215   7FF4AF8A07E4 : 0              
+0218 - Byte              7FF4ACCC22E8 : 160            7FF4AF8A07E8 : 0              
+0219 - Byte              7FF4ACCC22E9 : 23             7FF4AF8A07E9 : 0              
+021A - Byte              7FF4ACCC22EA : 186            7FF4AF8A07EA : 0              
+021B - Byte              7FF4ACCC22EB : 61             7FF4AF8A07EB : 0              
+021C - 4 Bytes           7FF4ACCC22EC : 0              7FF4AF8A07EC : 0              
+0220 - 4 Bytes           7FF4ACCC22F0 : 0              7FF4AF8A07F0 : 0              
+0224 - 4 Bytes           7FF4ACCC22F4 : 0              7FF4AF8A07F4 : 0              
+0228 - Pointer           7FF4ACCC22F8 : P->7FF4ACCC2E637FF4AF8A07F8 : P->00000000    
+0230 - Pointer           7FF4ACCC2300 : P->14287FF38   7FF4AF8A0800 : P->00000000    
+0238 - Pointer to instance of NS_SPRJ::PlayerIns7FF4ACCC2308 : P->7FF4ACCBEED07FF4AF8A0808 : P->00000000    
+0240 - Pointer           7FF4ACCC2310 : P->7FF4057231807FF4AF8A0810 : P->00000000    
+0248 - Pointer to instance of NS_SPRJ::SprjBehaviorCharacterProxyDriver7FF4ACCC2318 : P->7FF4057A7A007FF4AF8A0818 : P->00000000    
+0250 - Pointer to instance of NS_SPRJ::CSBehRaycastInterface7FF4ACCC2320 : P->7FF40578B7107FF4AF8A0820 : P->00000000    
+0258 - Pointer to instance of NS_SPRJ::SprjFD4LocationHkaPoseImporter7FF4ACCC2328 : P->7FF4ACFB62C07FF4AF8A0828 : P->00000000    
+0260 - Pointer           7FF4ACCC2330 : P->BA580000    7FF4AF8A0830 : P->00000000    
+0268 - Float             7FF4ACCC2338 : 0.01794433594  7FF4AF8A0838 : 0              
+026C - Float             7FF4ACCC233C : 1              7FF4AF8A083C : 0              
+0270 - 4 Bytes           7FF4ACCC2340 : 0              7FF4AF8A0840 : 0              
+0274 - 4 Bytes           7FF4ACCC2344 : 0              7FF4AF8A0844 : 0              
+0278 - Double            7FF4ACCC2348 : 0.00781249627477FF4AF8A0848 : 0              
+0280 - Double            7FF4ACCC2350 : 0.00781249719877FF4AF8A0850 : 0              
+0288 - Pointer           7FF4ACCC2358 : P->3F7FFFFF    7FF4AF8A0858 : P->00000000    
+0290 - Pointer           7FF4ACCC2360 : P->7FF4057231807FF4AF8A0860 : P->00000000    
+0298 - 4 Bytes           7FF4ACCC2368 : 123            7FF4AF8A0868 : 0              
+029C - 4 Bytes           7FF4ACCC236C : 1              7FF4AF8A086C : 0              
+02A0 - 4 Bytes           7FF4ACCC2370 : 0              7FF4AF8A0870 : 0              
+02A4 - 4 Bytes           7FF4ACCC2374 : 124            7FF4AF8A0874 : 0              
+02A8 - 4 Bytes           7FF4ACCC2378 : 9              7FF4AF8A0878 : 0              
+02AC - 4 Bytes (Hex)     7FF4ACCC237C : A9000000       7FF4AF8A087C : 00000000       
+02B0 - 4 Bytes           7FF4ACCC2380 : 5              7FF4AF8A0880 : 0              
+02B4 - 4 Bytes           7FF4ACCC2384 : 42             7FF4AF8A0884 : 0              
+02B8 - 4 Bytes           7FF4ACCC2388 : 1              7FF4AF8A0888 : 0              
+02BC - 4 Bytes           7FF4ACCC238C : 95             7FF4AF8A088C : 0              
+02C0 - 4 Bytes           7FF4ACCC2390 : 1              7FF4AF8A0890 : 0              
+02C4 - 4 Bytes (Hex)     7FF4ACCC2394 : A9000001       7FF4AF8A0894 : 00000000       
+02C8 - 4 Bytes           7FF4ACCC2398 : 95             7FF4AF8A0898 : 0              
+02CC - 4 Bytes           7FF4ACCC239C : 1              7FF4AF8A089C : 0              
+02D0 - 4 Bytes (Hex)     7FF4ACCC23A0 : A9000001       7FF4AF8A08A0 : 00000000       
+02D4 - 4 Bytes           7FF4ACCC23A4 : 95             7FF4AF8A08A4 : 0              
+02D8 - 4 Bytes           7FF4ACCC23A8 : 1              7FF4AF8A08A8 : 0              
+02DC - 4 Bytes (Hex)     7FF4ACCC23AC : 05000001       7FF4AF8A08AC : 00000000       
+02E0 - 4 Bytes           7FF4ACCC23B0 : 0              7FF4AF8A08B0 : 0              
+02E4 - 4 Bytes           7FF4ACCC23B4 : 0              7FF4AF8A08B4 : 0              
+02E8 - 4 Bytes           7FF4ACCC23B8 : 0              7FF4AF8A08B8 : 0              
+02EC - 4 Bytes           7FF4ACCC23BC : 0              7FF4AF8A08BC : 0              
+02F0 - 4 Bytes           7FF4ACCC23C0 : 0              7FF4AF8A08C0 : 0              
+02F4 - 4 Bytes           7FF4ACCC23C4 : 0              7FF4AF8A08C4 : 0              
+02F8 - 4 Bytes           7FF4ACCC23C8 : 0              7FF4AF8A08C8 : 0              
+02FC - 4 Bytes           7FF4ACCC23CC : 0              7FF4AF8A08CC : 0              
+0300 - 4 Bytes           7FF4ACCC23D0 : 0              7FF4AF8A08D0 : 0              
+0304 - 4 Bytes           7FF4ACCC23D4 : 0              7FF4AF8A08D4 : 0              
+0308 - 4 Bytes           7FF4ACCC23D8 : 0              7FF4AF8A08D8 : 0              
+030C - 4 Bytes           7FF4ACCC23DC : 0              7FF4AF8A08DC : 0              
+0310 - 4 Bytes           7FF4ACCC23E0 : 0              7FF4AF8A08E0 : 0              
+0314 - 4 Bytes           7FF4ACCC23E4 : 0              7FF4AF8A08E4 : 0              
+0318 - 4 Bytes           7FF4ACCC23E8 : 0              7FF4AF8A08E8 : 0              
+031C - 4 Bytes           7FF4ACCC23EC : 0              7FF4AF8A08EC : 0              
+0320 - 4 Bytes           7FF4ACCC23F0 : 0              7FF4AF8A08F0 : 0              
+0324 - 4 Bytes           7FF4ACCC23F4 : 0              7FF4AF8A08F4 : 0              
+0328 - 4 Bytes           7FF4ACCC23F8 : 0              7FF4AF8A08F8 : 0              
+032C - 4 Bytes           7FF4ACCC23FC : 0              7FF4AF8A08FC : 0              
+0330 - 4 Bytes           7FF4ACCC2400 : 0              7FF4AF8A0900 : 0              
+0334 - 4 Bytes           7FF4ACCC2404 : 0              7FF4AF8A0904 : 0              
+0338 - 4 Bytes           7FF4ACCC2408 : 0              7FF4AF8A0908 : 0              
+033C - 4 Bytes           7FF4ACCC240C : 0              7FF4AF8A090C : 0              
+0340 - 4 Bytes           7FF4ACCC2410 : 0              7FF4AF8A0910 : 0              
+0344 - 4 Bytes           7FF4ACCC2414 : 0              7FF4AF8A0914 : 0              
+0348 - 4 Bytes           7FF4ACCC2418 : 0              7FF4AF8A0918 : 0              
+034C - 4 Bytes           7FF4ACCC241C : 0              7FF4AF8A091C : 0              
+0350 - 4 Bytes           7FF4ACCC2420 : 0              7FF4AF8A0920 : 0              
+0354 - 4 Bytes           7FF4ACCC2424 : 0              7FF4AF8A0924 : 0              
+0358 - 4 Bytes           7FF4ACCC2428 : 0              7FF4AF8A0928 : 0              
+035C - 4 Bytes           7FF4ACCC242C : 0              7FF4AF8A092C : 0              
+0360 - 4 Bytes           7FF4ACCC2430 : 2              7FF4AF8A0930 : 0              
+0364 - 4 Bytes           7FF4ACCC2434 : 0              7FF4AF8A0934 : 0              
+0368 - 4 Bytes           7FF4ACCC2438 : 123            7FF4AF8A0938 : 0              
+036C - 4 Bytes           7FF4ACCC243C : 1              7FF4AF8A093C : 0              
+0370 - 4 Bytes           7FF4ACCC2440 : 0              7FF4AF8A0940 : 0              
+0374 - 4 Bytes           7FF4ACCC2444 : 124            7FF4AF8A0944 : 0              
+0378 - 4 Bytes           7FF4ACCC2448 : 9              7FF4AF8A0948 : 0              
+037C - 4 Bytes (Hex)     7FF4ACCC244C : A9000000       7FF4AF8A094C : 00000000       
+0380 - 4 Bytes           7FF4ACCC2450 : 5              7FF4AF8A0950 : 0              
+0384 - 4 Bytes           7FF4ACCC2454 : 42             7FF4AF8A0954 : 0              
+0388 - 4 Bytes           7FF4ACCC2458 : 1              7FF4AF8A0958 : 0              
+038C - 4 Bytes           7FF4ACCC245C : 95             7FF4AF8A095C : 0              
+0390 - 4 Bytes           7FF4ACCC2460 : 1              7FF4AF8A0960 : 0              
+0394 - 4 Bytes (Hex)     7FF4ACCC2464 : A9000001       7FF4AF8A0964 : 00000000       
+0398 - 4 Bytes           7FF4ACCC2468 : 95             7FF4AF8A0968 : 2945059315     
+039C - 4 Bytes           7FF4ACCC246C : 1              7FF4AF8A096C : 32756          
+03A0 - 4 Bytes (Hex)     7FF4ACCC2470 : A9000001       7FF4AF8A0970 : 427837A8       
+03A4 - 4 Bytes           7FF4ACCC2474 : 95             7FF4AF8A0974 : 1              
+03A8 - 4 Bytes           7FF4ACCC2478 : 1              7FF4AF8A0978 : 1115183256     
+03AC - 4 Bytes (Hex)     7FF4ACCC247C : 05000001       7FF4AF8A097C : 00000001       
+03B0 - 4 Bytes           7FF4ACCC2480 : 0              7FF4AF8A0980 : 2935044336     
+03B4 - 4 Bytes           7FF4ACCC2484 : 0              7FF4AF8A0984 : 32756          
+03B8 - 4 Bytes           7FF4ACCC2488 : 0              7FF4AF8A0988 : 0              
+03BC - 4 Bytes           7FF4ACCC248C : 0              7FF4AF8A098C : 0              
+03C0 - 4 Bytes           7FF4ACCC2490 : 0              7FF4AF8A0990 : 44             
+03C4 - 4 Bytes           7FF4ACCC2494 : 0              7FF4AF8A0994 : 0              
+03C8 - 4 Bytes           7FF4ACCC2498 : 0              7FF4AF8A0998 : 47             
+03CC - 4 Bytes           7FF4ACCC249C : 0              7FF4AF8A099C : 0              
+03D0 - 4 Bytes           7FF4ACCC24A0 : 0              7FF4AF8A09A0 : 1147387800     
+03D4 - 4 Bytes           7FF4ACCC24A4 : 0              7FF4AF8A09A4 : 1              
+03D8 - 4 Bytes           7FF4ACCC24A8 : 0              7FF4AF8A09A8 : 1              
+03DC - 4 Bytes           7FF4ACCC24AC : 0              7FF4AF8A09AC : 0              
+03E0 - 4 Bytes           7FF4ACCC24B0 : 0              7FF4AF8A09B0 : 4226896103     
+03E4 - 4 Bytes           7FF4ACCC24B4 : 0              7FF4AF8A09B4 : 0              
+03E8 - 4 Bytes           7FF4ACCC24B8 : 0              7FF4AF8A09B8 : 2649823792     
+03EC - 4 Bytes           7FF4ACCC24BC : 0              7FF4AF8A09BC : 32756          
+03F0 - 4 Bytes           7FF4ACCC24C0 : 0              7FF4AF8A09C0 : 0              
+03F4 - 4 Bytes           7FF4ACCC24C4 : 0              7FF4AF8A09C4 : 0              
+03F8 - 4 Bytes           7FF4ACCC24C8 : 0              7FF4AF8A09C8 : 1              
+03FC - 4 Bytes           7FF4ACCC24CC : 0              7FF4AF8A09CC : 0              
+0400 - 4 Bytes           7FF4ACCC24D0 : 0              7FF4AF8A09D0 : 1115219144     
+0404 - 4 Bytes           7FF4ACCC24D4 : 0              7FF4AF8A09D4 : 1              
+0408 - 4 Bytes           7FF4ACCC24D8 : 0              7FF4AF8A09D8 : 0              
+040C - 4 Bytes           7FF4ACCC24DC : 0              7FF4AF8A09DC : 0              
+0410 - 4 Bytes           7FF4ACCC24E0 : 0              7FF4AF8A09E0 : 4294452228     
+0414 - 4 Bytes           7FF4ACCC24E4 : 0              7FF4AF8A09E4 : 0              
+0418 - 4 Bytes           7FF4ACCC24E8 : 0              7FF4AF8A09E8 : 0              
+041C - 4 Bytes           7FF4ACCC24EC : 0              7FF4AF8A09EC : 0              
+0420 - 4 Bytes           7FF4ACCC24F0 : 0              7FF4AF8A09F0 : 2963596768     
+0424 - 4 Bytes           7FF4ACCC24F4 : 0              7FF4AF8A09F4 : 32756          
+0428 - 4 Bytes           7FF4ACCC24F8 : 0              7FF4AF8A09F8 : 2945059363     
+042C - 4 Bytes           7FF4ACCC24FC : 0              7FF4AF8A09FC : 32756          
+0430 - 4 Bytes           7FF4ACCC2500 : 2              7FF4AF8A0A00 : 2              
+0434 - 4 Bytes           7FF4ACCC2504 : 0              7FF4AF8A0A04 : 32756          
+0438 - 4 Bytes           7FF4ACCC2508 : 123            7FF4AF8A0A08 : 2945814448     
+043C - 4 Bytes           7FF4ACCC250C : 1              7FF4AF8A0A0C : 32756          
+0440 - 4 Bytes           7FF4ACCC2510 : 0              7FF4AF8A0A10 : 2935559808     
+0444 - 4 Bytes           7FF4ACCC2514 : 124            7FF4AF8A0A14 : 32756          
+0448 - 4 Bytes           7FF4ACCC2518 : 9              7FF4AF8A0A18 : 2935559952     
+044C - 4 Bytes (Hex)     7FF4ACCC251C : A9000000       7FF4AF8A0A1C : 00007FF4       
+0450 - 4 Bytes           7FF4ACCC2520 : 5              7FF4AF8A0A20 : 2935560240     
+0454 - 4 Bytes           7FF4ACCC2524 : 42             7FF4AF8A0A24 : 32756          
+0458 - 4 Bytes           7FF4ACCC2528 : 1              7FF4AF8A0A28 : 2945059619     
+045C - 4 Bytes           7FF4ACCC252C : 95             7FF4AF8A0A2C : 32756          
+0460 - 4 Bytes           7FF4ACCC2530 : 1              7FF4AF8A0A30 : 1116807584     
+0464 - 4 Bytes (Hex)     7FF4ACCC2534 : A9000001       7FF4AF8A0A34 : 00000001       
+0468 - 4 Bytes           7FF4ACCC2538 : 95             7FF4AF8A0A38 : 3              
+046C - 4 Bytes           7FF4ACCC253C : 1              7FF4AF8A0A3C : 0              
+0470 - 4 Bytes (Hex)     7FF4ACCC2540 : A9000001       7FF4AF8A0A40 : AF8A0B70       
+0474 - 4 Bytes           7FF4ACCC2544 : 95             7FF4AF8A0A44 : 32756          
+0478 - 4 Bytes           7FF4ACCC2548 : 1              7FF4AF8A0A48 : 920927488      
+047C - 4 Bytes (Hex)     7FF4ACCC254C : 05000001       7FF4AF8A0A4C : 00007FF4       
+0480 - 4 Bytes           7FF4ACCC2550 : 0              7FF4AF8A0A50 : 920927312      
+0484 - 4 Bytes           7FF4ACCC2554 : 0              7FF4AF8A0A54 : 32756          
+0488 - 4 Bytes           7FF4ACCC2558 : 0              7FF4AF8A0A58 : 1116985448     
+048C - 4 Bytes           7FF4ACCC255C : 0              7FF4AF8A0A5C : 1              
+0490 - 4 Bytes           7FF4ACCC2560 : 0              7FF4AF8A0A60 : 1116898512     
+0494 - 4 Bytes           7FF4ACCC2564 : 0              7FF4AF8A0A64 : 1              
+0498 - 4 Bytes           7FF4ACCC2568 : 0              7FF4AF8A0A68 : 140000000      
+049C - 4 Bytes           7FF4ACCC256C : 0              7FF4AF8A0A6C : 0              
+04A0 - 4 Bytes           7FF4ACCC2570 : 0              7FF4AF8A0A70 : 140000000      
+04A4 - 4 Bytes           7FF4ACCC2574 : 0              7FF4AF8A0A74 : 0              
+04A8 - 4 Bytes           7FF4ACCC2578 : 0              7FF4AF8A0A78 : 0              
+04AC - 4 Bytes           7FF4ACCC257C : 0              7FF4AF8A0A7C : 0              
+04B0 - 4 Bytes           7FF4ACCC2580 : 0              7FF4AF8A0A80 : 1116898512     
+04B4 - 4 Bytes           7FF4ACCC2584 : 0              7FF4AF8A0A84 : 1              
+04B8 - 4 Bytes           7FF4ACCC2588 : 0              7FF4AF8A0A88 : 140000000      
+04BC - 4 Bytes           7FF4ACCC258C : 0              7FF4AF8A0A8C : 0              
+04C0 - 4 Bytes           7FF4ACCC2590 : 0              7FF4AF8A0A90 : 140000000      
+04C4 - 4 Bytes           7FF4ACCC2594 : 0              7FF4AF8A0A94 : 0              
+04C8 - 4 Bytes           7FF4ACCC2598 : 0              7FF4AF8A0A98 : 0              
+04CC - 4 Bytes           7FF4ACCC259C : 0              7FF4AF8A0A9C : 0              
+04D0 - 4 Bytes           7FF4ACCC25A0 : 0              7FF4AF8A0AA0 : 1116898512     
+04D4 - 4 Bytes           7FF4ACCC25A4 : 0              7FF4AF8A0AA4 : 1              
+04D8 - 4 Bytes           7FF4ACCC25A8 : 0              7FF4AF8A0AA8 : 140000000      
+04DC - 4 Bytes           7FF4ACCC25AC : 0              7FF4AF8A0AAC : 0              
+04E0 - 4 Bytes           7FF4ACCC25B0 : 0              7FF4AF8A0AB0 : 140000000      
+04E4 - 4 Bytes           7FF4ACCC25B4 : 0              7FF4AF8A0AB4 : 0              
+04E8 - 4 Bytes           7FF4ACCC25B8 : 0              7FF4AF8A0AB8 : 0              
+04EC - 4 Bytes           7FF4ACCC25BC : 0              7FF4AF8A0ABC : 0              
+04F0 - 4 Bytes           7FF4ACCC25C0 : 0              7FF4AF8A0AC0 : 1116898512     
+04F4 - 4 Bytes           7FF4ACCC25C4 : 0              7FF4AF8A0AC4 : 1              
+04F8 - 4 Bytes           7FF4ACCC25C8 : 0              7FF4AF8A0AC8 : 140000000      
+04FC - 4 Bytes           7FF4ACCC25CC : 0              7FF4AF8A0ACC : 0              
+0500 - 4 Bytes           7FF4ACCC25D0 : 2              7FF4AF8A0AD0 : 140000000      
+0504 - 4 Bytes           7FF4ACCC25D4 : 0              7FF4AF8A0AD4 : 0              
+0508 - 4 Bytes           7FF4ACCC25D8 : 49             7FF4AF8A0AD8 : 0              
+050C - 4 Bytes           7FF4ACCC25DC : 1              7FF4AF8A0ADC : 0              
+0510 - 4 Bytes           7FF4ACCC25E0 : 2              7FF4AF8A0AE0 : 1116809488     
+0514 - 4 Bytes           7FF4ACCC25E4 : 0              7FF4AF8A0AE4 : 1              
+0518 - 4 Bytes           7FF4ACCC25E8 : 0              7FF4AF8A0AE8 : 0              
+051C - 4 Bytes           7FF4ACCC25EC : 0              7FF4AF8A0AEC : 0              
+0520 - Pointer           7FF4ACCC25F0 : P->7FF404C0F9807FF4AF8A0AF0 : P->00000000    
+0528 - 4 Bytes           7FF4ACCC25F8 : 522            7FF4AF8A0AF8 : 0              
+052C - 4 Bytes           7FF4ACCC25FC : 3              7FF4AF8A0AFC : 0              
+0530 - 4 Bytes           7FF4ACCC2600 : 1              7FF4AF8A0B00 : 2945059376     
+0534 - 4 Bytes           7FF4ACCC2604 : 0              7FF4AF8A0B04 : 32756          
+0538 - 4 Bytes           7FF4ACCC2608 : 0              7FF4AF8A0B08 : 1086589888     
+053C - 4 Bytes           7FF4ACCC260C : 0              7FF4AF8A0B0C : 1              
+0540 - Pointer           7FF4ACCC2610 : P->7FF404C153307FF4AF8A0B10 : P->00000000    
+0548 - 4 Bytes           7FF4ACCC2618 : 575            7FF4AF8A0B18 : 0              
+054C - Double            7FF4ACCC261C : 0.00781250000007FF4AF8A0B1C : 0              
+0554 - 4 Bytes           7FF4ACCC2624 : 0              7FF4AF8A0B24 : 0              
+0558 - 4 Bytes           7FF4ACCC2628 : 0              7FF4AF8A0B28 : 2945059651     
+055C - 4 Bytes           7FF4ACCC262C : 0              7FF4AF8A0B2C : 32756          
+0560 - Pointer           7FF4ACCC2630 : P->7FF404C159607FF4AF8A0B30 : P->7FF4AF8A0B50
+0568 - 4 Bytes           7FF4ACCC2638 : 726            7FF4AF8A0B38 : 2945059664     
+056C - 4 Bytes           7FF4ACCC263C : 3              7FF4AF8A0B3C : 32756          
+0570 - 4 Bytes           7FF4ACCC2640 : 53             7FF4AF8A0B40 : 2649234272     
+0574 - 4 Bytes           7FF4ACCC2644 : 0              7FF4AF8A0B44 : 32756          
+0578 - 4 Bytes           7FF4ACCC2648 : 0              7FF4AF8A0B48 : 2945059683     
+057C - 4 Bytes           7FF4ACCC264C : 0              7FF4AF8A0B4C : 32756          
+0580 - Pointer           7FF4ACCC2650 : P->7FF404C1EFF07FF4AF8A0B50 : P->7FF4AF8A0B30
+0588 - 4 Bytes           7FF4ACCC2658 : 652            7FF4AF8A0B58 : 2945059632     
+058C - 4 Bytes           7FF4ACCC265C : 4              7FF4AF8A0B5C : 32756          
+0590 - 4 Bytes           7FF4ACCC2660 : 0              7FF4AF8A0B60 : 2945084688     
+0594 - 4 Bytes           7FF4ACCC2664 : 0              7FF4AF8A0B64 : 32756          
+0598 - 4 Bytes           7FF4ACCC2668 : 0              7FF4AF8A0B68 : 2945061699     
+059C - 4 Bytes           7FF4ACCC266C : 0              7FF4AF8A0B6C : 32756          
+05A0 - Pointer           7FF4ACCC2670 : P->7FF404C164107FF4AF8A0B70 : P->14293DD68   
+05A8 - 4 Bytes           7FF4ACCC2678 : 650            7FF4AF8A0B78 : 920928640      
+05AC - 4 Bytes           7FF4ACCC267C : 4              7FF4AF8A0B7C : 32756          
+05B0 - 4 Bytes           7FF4ACCC2680 : 0              7FF4AF8A0B80 : 1147389160     
+05B4 - 4 Bytes           7FF4ACCC2684 : 0              7FF4AF8A0B84 : 1              
+05B8 - 4 Bytes           7FF4ACCC2688 : 0              7FF4AF8A0B88 : 1116977112     
+05BC - 4 Bytes           7FF4ACCC268C : 0              7FF4AF8A0B8C : 1              
+05C0 - Pointer           7FF4ACCC2690 : P->7FF404C1CB107FF4AF8A0B90 : P->7FF436E441D0
+05C8 - 4 Bytes           7FF4ACCC2698 : 659            7FF4AF8A0B98 : 0              
+05CC - 4 Bytes           7FF4ACCC269C : 4              7FF4AF8A0B9C : 0              
+05D0 - 4 Bytes           7FF4ACCC26A0 : 0              7FF4AF8A0BA0 : 1147389160     
+05D4 - 4 Bytes           7FF4ACCC26A4 : 0              7FF4AF8A0BA4 : 1              
+05D8 - 4 Bytes           7FF4ACCC26A8 : 0              7FF4AF8A0BA8 : 1147389160     
+05DC - 4 Bytes           7FF4ACCC26AC : 0              7FF4AF8A0BAC : 1              
+05E0 - Pointer           7FF4ACCC26B0 : P->7FF404C1CB907FF4AF8A0BB0 : P->14463C4E8   
+05E8 - 4 Bytes           7FF4ACCC26B8 : 650            7FF4AF8A0BB8 : 0              
+05EC - 4 Bytes           7FF4ACCC26BC : 4              7FF4AF8A0BBC : 0              
+05F0 - 4 Bytes           7FF4ACCC26C0 : 0              7FF4AF8A0BC0 : 0              
+05F4 - 4 Bytes           7FF4ACCC26C4 : 0              7FF4AF8A0BC4 : 0              
+05F8 - 4 Bytes           7FF4ACCC26C8 : 0              7FF4AF8A0BC8 : 916274976      
+05FC - 4 Bytes           7FF4ACCC26CC : 0              7FF4AF8A0BCC : 32756          
+0600 - Pointer           7FF4ACCC26D0 : P->7FF404C1CB107FF4AF8A0BD0 : P->7FF4369D3F20
+0608 - 4 Bytes           7FF4ACCC26D8 : 659            7FF4AF8A0BD8 : 0              
+060C - 4 Bytes           7FF4ACCC26DC : 4              7FF4AF8A0BDC : 0              
+0610 - 4 Bytes           7FF4ACCC26E0 : 0              7FF4AF8A0BE0 : 0              
+0614 - 4 Bytes           7FF4ACCC26E4 : 0              7FF4AF8A0BE4 : 0              
+0618 - 4 Bytes           7FF4ACCC26E8 : 0              7FF4AF8A0BE8 : 0              
+061C - 4 Bytes           7FF4ACCC26EC : 0              7FF4AF8A0BEC : 0              
+0620 - Pointer           7FF4ACCC26F0 : P->7FF404C1CB907FF4AF8A0BF0 : P->00000000    
+0628 - 4 Bytes           7FF4ACCC26F8 : 659            7FF4AF8A0BF8 : 0              
+062C - 4 Bytes           7FF4ACCC26FC : 4              7FF4AF8A0BFC : 0              
+0630 - 4 Bytes           7FF4ACCC2700 : 0              7FF4AF8A0C00 : 7              
+0634 - 4 Bytes           7FF4ACCC2704 : 0              7FF4AF8A0C04 : 0              
+0638 - 4 Bytes           7FF4ACCC2708 : 0              7FF4AF8A0C08 : 1150360752     
+063C - 4 Bytes           7FF4ACCC270C : 0              7FF4AF8A0C0C : 1              
+0640 - Pointer           7FF4ACCC2710 : P->7FF404C1CB907FF4AF8A0C10 : P->00000001    
+0648 - 4 Bytes           7FF4ACCC2718 : 650            7FF4AF8A0C18 : 0              
+064C - 4 Bytes           7FF4ACCC271C : 4              7FF4AF8A0C1C : 0              
+0650 - 4 Bytes           7FF4ACCC2720 : 0              7FF4AF8A0C20 : 0              
+0654 - 4 Bytes           7FF4ACCC2724 : 0              7FF4AF8A0C24 : 0              
+0658 - 4 Bytes           7FF4ACCC2728 : 0              7FF4AF8A0C28 : 0              
+065C - 4 Bytes           7FF4ACCC272C : 0              7FF4AF8A0C2C : 0              
+0660 - Pointer           7FF4ACCC2730 : P->7FF404C1CB107FF4AF8A0C30 : P->00000000    
+0668 - 4 Bytes           7FF4ACCC2738 : 659            7FF4AF8A0C38 : 0              
+066C - 4 Bytes           7FF4ACCC273C : 4              7FF4AF8A0C3C : 0              
+0670 - 4 Bytes           7FF4ACCC2740 : 0              7FF4AF8A0C40 : 7              
+0674 - 4 Bytes           7FF4ACCC2744 : 0              7FF4AF8A0C44 : 0              
+0678 - 4 Bytes           7FF4ACCC2748 : 0              7FF4AF8A0C48 : 1150360752     
+067C - 4 Bytes           7FF4ACCC274C : 0              7FF4AF8A0C4C : 1              
+0680 - Pointer           7FF4ACCC2750 : P->7FF404C1CB907FF4AF8A0C50 : P->00000001    
+0688 - 4 Bytes           7FF4ACCC2758 : 659            7FF4AF8A0C58 : 4294967295     
+068C - 4 Bytes           7FF4ACCC275C : 4              7FF4AF8A0C5C : 4294967295     
+0690 - 4 Bytes           7FF4ACCC2760 : 0              7FF4AF8A0C60 : 0              
+0694 - 4 Bytes           7FF4ACCC2764 : 0              7FF4AF8A0C64 : 0              
+0698 - 4 Bytes           7FF4ACCC2768 : 0              7FF4AF8A0C68 : 0              
+069C - 4 Bytes           7FF4ACCC276C : 0              7FF4AF8A0C6C : 0              
+06A0 - Pointer           7FF4ACCC2770 : P->7FF404C1CB907FF4AF8A0C70 : P->00000000    
+06A8 - 4 Bytes           7FF4ACCC2778 : 659            7FF4AF8A0C78 : 0              
+06AC - 4 Bytes           7FF4ACCC277C : 4              7FF4AF8A0C7C : 0              
+06B0 - 4 Bytes           7FF4ACCC2780 : 0              7FF4AF8A0C80 : 0              
+06B4 - 4 Bytes           7FF4ACCC2784 : 0              7FF4AF8A0C84 : 0              
+06B8 - 4 Bytes           7FF4ACCC2788 : 0              7FF4AF8A0C88 : 919392352      
+06BC - 4 Bytes           7FF4ACCC278C : 0              7FF4AF8A0C8C : 32756          
+06C0 - Pointer           7FF4ACCC2790 : P->7FF404C1CB907FF4AF8A0C90 : P->7FF436CCB340
+06C8 - 4 Bytes           7FF4ACCC2798 : 659            7FF4AF8A0C98 : 1022885868     
+06CC - 4 Bytes           7FF4ACCC279C : 4              7FF4AF8A0C9C : 1031274503     
+06D0 - 4 Bytes           7FF4ACCC27A0 : 0              7FF4AF8A0CA0 : 1041931350     
+06D4 - 4 Bytes           7FF4ACCC27A4 : 0              7FF4AF8A0CA4 : 1062221684     
+06D8 - 4 Bytes           7FF4ACCC27A8 : 0              7FF4AF8A0CA8 : 0              
+06DC - 4 Bytes           7FF4ACCC27AC : 0              7FF4AF8A0CAC : 0              
+06E0 - Pointer           7FF4ACCC27B0 : P->7FF404C1CB907FF4AF8A0CB0 : P->3E77BA6100000000
+06E8 - 4 Bytes           7FF4ACCC27B8 : 4294967295     7FF4AF8A0CB8 : 0              
+06EC - 4 Bytes           7FF4ACCC27BC : 4294967295     7FF4AF8A0CBC : 1064854862     
+06F0 - 4 Bytes           7FF4ACCC27C0 : 0              7FF4AF8A0CC0 : 0              
+06F4 - 4 Bytes           7FF4ACCC27C4 : 0              7FF4AF8A0CC4 : 0              
+06F8 - 4 Bytes           7FF4ACCC27C8 : 0              7FF4AF8A0CC8 : 0              
+06FC - 4 Bytes           7FF4ACCC27CC : 0              7FF4AF8A0CCC : 0              
+0700 - 4 Bytes           7FF4ACCC27D0 : 0              7FF4AF8A0CD0 : 0              
+0704 - 4 Bytes           7FF4ACCC27D4 : 0              7FF4AF8A0CD4 : 0              
+0708 - 4 Bytes           7FF4ACCC27D8 : 4294967295     7FF4AF8A0CD8 : 4294967295     
+070C - 4 Bytes           7FF4ACCC27DC : 4294967295     7FF4AF8A0CDC : 0              
+0710 - 4 Bytes           7FF4ACCC27E0 : 0              7FF4AF8A0CE0 : 0              
+0714 - 4 Bytes           7FF4ACCC27E4 : 0              7FF4AF8A0CE4 : 0              
+0718 - 4 Bytes           7FF4ACCC27E8 : 0              7FF4AF8A0CE8 : 0              
+071C - 4 Bytes           7FF4ACCC27EC : 0              7FF4AF8A0CEC : 0              
+0720 - 4 Bytes           7FF4ACCC27F0 : 0              7FF4AF8A0CF0 : 0              
+0724 - 4 Bytes           7FF4ACCC27F4 : 0              7FF4AF8A0CF4 : 0              
+0728 - 4 Bytes           7FF4ACCC27F8 : 4294967295     7FF4AF8A0CF8 : 7              
+072C - 4 Bytes           7FF4ACCC27FC : 4294967295     7FF4AF8A0CFC : 0              
+0730 - 4 Bytes           7FF4ACCC2800 : 0              7FF4AF8A0D00 : 1150360752     
+0734 - 4 Bytes           7FF4ACCC2804 : 0              7FF4AF8A0D04 : 1              
+0738 - 4 Bytes           7FF4ACCC2808 : 0              7FF4AF8A0D08 : 1              
+073C - 4 Bytes           7FF4ACCC280C : 0              7FF4AF8A0D0C : 0              
+0740 - 4 Bytes           7FF4ACCC2810 : 0              7FF4AF8A0D10 : 0              
+0744 - 4 Bytes           7FF4ACCC2814 : 0              7FF4AF8A0D14 : 0              
+0748 - 4 Bytes           7FF4ACCC2818 : 4294967295     7FF4AF8A0D18 : 0              
+074C - 4 Bytes           7FF4ACCC281C : 4294967295     7FF4AF8A0D1C : 0              
+0750 - 4 Bytes           7FF4ACCC2820 : 0              7FF4AF8A0D20 : 0              
+0754 - 4 Bytes           7FF4ACCC2824 : 0              7FF4AF8A0D24 : 0              
+0758 - 4 Bytes           7FF4ACCC2828 : 0              7FF4AF8A0D28 : 0              
+075C - 4 Bytes           7FF4ACCC282C : 0              7FF4AF8A0D2C : 0              
+0760 - 4 Bytes           7FF4ACCC2830 : 0              7FF4AF8A0D30 : 0              
+0764 - 4 Bytes           7FF4ACCC2834 : 0              7FF4AF8A0D34 : 0              
+0768 - 4 Bytes           7FF4ACCC2838 : 4294967295     7FF4AF8A0D38 : 0              
+076C - 4 Bytes           7FF4ACCC283C : 4294967295     7FF4AF8A0D3C : 0              
+0770 - 4 Bytes           7FF4ACCC2840 : 0              7FF4AF8A0D40 : 1              
+0774 - 4 Bytes           7FF4ACCC2844 : 0              7FF4AF8A0D44 : 1023969381     
+0778 - 4 Bytes           7FF4ACCC2848 : 0              7FF4AF8A0D48 : 1065353216     
+077C - 4 Bytes           7FF4ACCC284C : 0              7FF4AF8A0D4C : 1065353216     
+0780 - 4 Bytes           7FF4ACCC2850 : 0              7FF4AF8A0D50 : 257            
+0784 - 4 Bytes           7FF4ACCC2854 : 0              7FF4AF8A0D54 : 0              
+0788 - 4 Bytes           7FF4ACCC2858 : 4294967295     7FF4AF8A0D58 : 0              
+078C - 4 Bytes           7FF4ACCC285C : 4294967295     7FF4AF8A0D5C : 0              
+0790 - 4 Bytes           7FF4ACCC2860 : 0              7FF4AF8A0D60 : 0              
+0794 - 4 Bytes           7FF4ACCC2864 : 0              7FF4AF8A0D64 : 0              
+0798 - 4 Bytes           7FF4ACCC2868 : 0              7FF4AF8A0D68 : 0              
+079C - 4 Bytes           7FF4ACCC286C : 0              7FF4AF8A0D6C : 0              
+07A0 - 4 Bytes           7FF4ACCC2870 : 0              7FF4AF8A0D70 : 0              
+07A4 - 4 Bytes           7FF4ACCC2874 : 0              7FF4AF8A0D74 : 0              
+07A8 - 4 Bytes           7FF4ACCC2878 : 4294967295     7FF4AF8A0D78 : 0              
+07AC - 4 Bytes           7FF4ACCC287C : 4294967295     7FF4AF8A0D7C : 0              
+07B0 - 4 Bytes           7FF4ACCC2880 : 0              7FF4AF8A0D80 : 0              
+07B4 - 4 Bytes           7FF4ACCC2884 : 0              7FF4AF8A0D84 : 0              
+07B8 - 4 Bytes           7FF4ACCC2888 : 0              7FF4AF8A0D88 : 1              
+07BC - 4 Bytes           7FF4ACCC288C : 0              7FF4AF8A0D8C : 0              
+07C0 - 4 Bytes           7FF4ACCC2890 : 0              7FF4AF8A0D90 : 0              
+07C4 - 4 Bytes           7FF4ACCC2894 : 0              7FF4AF8A0D94 : 0              
+07C8 - 4 Bytes           7FF4ACCC2898 : 4294967295     7FF4AF8A0D98 : 0              
+07CC - 4 Bytes           7FF4ACCC289C : 4294967295     7FF4AF8A0D9C : 0              
+07D0 - 4 Bytes           7FF4ACCC28A0 : 0              7FF4AF8A0DA0 : 0              
+07D4 - 4 Bytes           7FF4ACCC28A4 : 0              7FF4AF8A0DA4 : 0              
+07D8 - 4 Bytes           7FF4ACCC28A8 : 0              7FF4AF8A0DA8 : 0              
+07DC - 4 Bytes           7FF4ACCC28AC : 0              7FF4AF8A0DAC : 0              
+07E0 - 4 Bytes           7FF4ACCC28B0 : 0              7FF4AF8A0DB0 : 0              
+07E4 - 4 Bytes           7FF4ACCC28B4 : 0              7FF4AF8A0DB4 : 0              
+07E8 - 4 Bytes           7FF4ACCC28B8 : 4294967295     7FF4AF8A0DB8 : 0              
+07EC - 4 Bytes           7FF4ACCC28BC : 4294967295     7FF4AF8A0DBC : 0              
+07F0 - 4 Bytes           7FF4ACCC28C0 : 0              7FF4AF8A0DC0 : 0              
+07F4 - 4 Bytes           7FF4ACCC28C4 : 0              7FF4AF8A0DC4 : 0              
+07F8 - 4 Bytes           7FF4ACCC28C8 : 0              7FF4AF8A0DC8 : 0              
+07FC - 4 Bytes           7FF4ACCC28CC : 0              7FF4AF8A0DCC : 0              
+0800 - 4 Bytes           7FF4ACCC28D0 : 0              7FF4AF8A0DD0 : 1              
+0804 - 4 Bytes           7FF4ACCC28D4 : 0              7FF4AF8A0DD4 : 0              
+0808 - 4 Bytes           7FF4ACCC28D8 : 4294967295     7FF4AF8A0DD8 : 0              
+080C - 4 Bytes           7FF4ACCC28DC : 4294967295     7FF4AF8A0DDC : 0              
+0810 - 4 Bytes           7FF4ACCC28E0 : 0              7FF4AF8A0DE0 : 1147389160     
+0814 - 4 Bytes           7FF4ACCC28E4 : 0              7FF4AF8A0DE4 : 1              
+0818 - 4 Bytes           7FF4ACCC28E8 : 0              7FF4AF8A0DE8 : 0              
+081C - 4 Bytes           7FF4ACCC28EC : 0              7FF4AF8A0DEC : 0              
+0820 - 4 Bytes           7FF4ACCC28F0 : 0              7FF4AF8A0DF0 : 0              
+0824 - 4 Bytes           7FF4ACCC28F4 : 0              7FF4AF8A0DF4 : 0              
+0828 - 4 Bytes           7FF4ACCC28F8 : 4294967295     7FF4AF8A0DF8 : 0              
+082C - 4 Bytes           7FF4ACCC28FC : 4294967295     7FF4AF8A0DFC : 0              
+0830 - 4 Bytes           7FF4ACCC2900 : 0              7FF4AF8A0E00 : 0              
+0834 - 4 Bytes           7FF4ACCC2904 : 0              7FF4AF8A0E04 : 0              
+0838 - 4 Bytes           7FF4ACCC2908 : 0              7FF4AF8A0E08 : 0              
+083C - 4 Bytes           7FF4ACCC290C : 0              7FF4AF8A0E0C : 0              
+0840 - 4 Bytes           7FF4ACCC2910 : 0              7FF4AF8A0E10 : 0              
+0844 - 4 Bytes           7FF4ACCC2914 : 0              7FF4AF8A0E14 : 0              
+0848 - 4 Bytes           7FF4ACCC2918 : 4294967295     7FF4AF8A0E18 : 0              
+084C - 4 Bytes           7FF4ACCC291C : 4294967295     7FF4AF8A0E1C : 0              
+0850 - 4 Bytes           7FF4ACCC2920 : 0              7FF4AF8A0E20 : 0              
+0854 - 4 Bytes           7FF4ACCC2924 : 0              7FF4AF8A0E24 : 0              
+0858 - 4 Bytes           7FF4ACCC2928 : 0              7FF4AF8A0E28 : 0              
+085C - 4 Bytes           7FF4ACCC292C : 0              7FF4AF8A0E2C : 0              
+0860 - 4 Bytes           7FF4ACCC2930 : 0              7FF4AF8A0E30 : 0              
+0864 - 4 Bytes           7FF4ACCC2934 : 0              7FF4AF8A0E34 : 0              
+0868 - 4 Bytes           7FF4ACCC2938 : 4294967295     7FF4AF8A0E38 : 0              
+086C - 4 Bytes           7FF4ACCC293C : 4294967295     7FF4AF8A0E3C : 0              
+0870 - 4 Bytes           7FF4ACCC2940 : 0              7FF4AF8A0E40 : 0              
+0874 - 4 Bytes           7FF4ACCC2944 : 0              7FF4AF8A0E44 : 0              
+0878 - 4 Bytes           7FF4ACCC2948 : 0              7FF4AF8A0E48 : 0              
+087C - 4 Bytes           7FF4ACCC294C : 0              7FF4AF8A0E4C : 0              
+0880 - 4 Bytes           7FF4ACCC2950 : 0              7FF4AF8A0E50 : 0              
+0884 - 4 Bytes           7FF4ACCC2954 : 0              7FF4AF8A0E54 : 0              
+0888 - 4 Bytes           7FF4ACCC2958 : 4294967295     7FF4AF8A0E58 : 0              
+088C - 4 Bytes           7FF4ACCC295C : 4294967295     7FF4AF8A0E5C : 0              
+0890 - 4 Bytes           7FF4ACCC2960 : 0              7FF4AF8A0E60 : 0              
+0894 - 4 Bytes           7FF4ACCC2964 : 0              7FF4AF8A0E64 : 0              
+0898 - 4 Bytes           7FF4ACCC2968 : 0              7FF4AF8A0E68 : 0              
+089C - 4 Bytes           7FF4ACCC296C : 0              7FF4AF8A0E6C : 0              
+08A0 - 4 Bytes           7FF4ACCC2970 : 0              7FF4AF8A0E70 : 0              
+08A4 - 4 Bytes           7FF4ACCC2974 : 0              7FF4AF8A0E74 : 0              
+08A8 - 4 Bytes           7FF4ACCC2978 : 4294967295     7FF4AF8A0E78 : 0              
+08AC - 4 Bytes           7FF4ACCC297C : 4294967295     7FF4AF8A0E7C : 0              
+08B0 - 4 Bytes           7FF4ACCC2980 : 0              7FF4AF8A0E80 : 0              
+08B4 - 4 Bytes           7FF4ACCC2984 : 0              7FF4AF8A0E84 : 0              
+08B8 - 4 Bytes           7FF4ACCC2988 : 0              7FF4AF8A0E88 : 0              
+08BC - 4 Bytes           7FF4ACCC298C : 0              7FF4AF8A0E8C : 0              
+08C0 - 4 Bytes           7FF4ACCC2990 : 0              7FF4AF8A0E90 : 0              
+08C4 - 4 Bytes           7FF4ACCC2994 : 0              7FF4AF8A0E94 : 0              
+08C8 - 4 Bytes           7FF4ACCC2998 : 4294967295     7FF4AF8A0E98 : 0              
+08CC - 4 Bytes           7FF4ACCC299C : 4294967295     7FF4AF8A0E9C : 0              
+08D0 - 4 Bytes           7FF4ACCC29A0 : 0              7FF4AF8A0EA0 : 0              
+08D4 - 4 Bytes           7FF4ACCC29A4 : 0              7FF4AF8A0EA4 : 0              
+08D8 - 4 Bytes           7FF4ACCC29A8 : 0              7FF4AF8A0EA8 : 0              
+08DC - 4 Bytes           7FF4ACCC29AC : 0              7FF4AF8A0EAC : 0              
+08E0 - 4 Bytes           7FF4ACCC29B0 : 0              7FF4AF8A0EB0 : 0              
+08E4 - 4 Bytes           7FF4ACCC29B4 : 0              7FF4AF8A0EB4 : 0              
+08E8 - 4 Bytes           7FF4ACCC29B8 : 4294967295     7FF4AF8A0EB8 : 0              
+08EC - 4 Bytes           7FF4ACCC29BC : 4294967295     7FF4AF8A0EBC : 0              
+08F0 - 4 Bytes           7FF4ACCC29C0 : 0              7FF4AF8A0EC0 : 0              
+08F4 - 4 Bytes           7FF4ACCC29C4 : 0              7FF4AF8A0EC4 : 0              
+08F8 - 4 Bytes           7FF4ACCC29C8 : 0              7FF4AF8A0EC8 : 0              
+08FC - 4 Bytes           7FF4ACCC29CC : 0              7FF4AF8A0ECC : 0              
+0900 - 4 Bytes           7FF4ACCC29D0 : 0              7FF4AF8A0ED0 : 0              
+0904 - 4 Bytes           7FF4ACCC29D4 : 0              7FF4AF8A0ED4 : 0              
+0908 - 4 Bytes           7FF4ACCC29D8 : 7              7FF4AF8A0ED8 : 0              
+090C - 4 Bytes           7FF4ACCC29DC : 0              7FF4AF8A0EDC : 0              
+0910 - 4 Bytes           7FF4ACCC29E0 : 576            7FF4AF8A0EE0 : 0              
+0914 - 4 Bytes           7FF4ACCC29E4 : 0              7FF4AF8A0EE4 : 0              
+0918 - 4 Bytes           7FF4ACCC29E8 : 0              7FF4AF8A0EE8 : 0              
+091C - 4 Bytes           7FF4ACCC29EC : 0              7FF4AF8A0EEC : 0              
+0920 - 4 Bytes           7FF4ACCC29F0 : 0              7FF4AF8A0EF0 : 0              
+0924 - 4 Bytes           7FF4ACCC29F4 : 0              7FF4AF8A0EF4 : 0              
+0928 - 4 Bytes           7FF4ACCC29F8 : 0              7FF4AF8A0EF8 : 0              
+092C - 4 Bytes           7FF4ACCC29FC : 0              7FF4AF8A0EFC : 0              
+0930 - 4 Bytes           7FF4ACCC2A00 : 0              7FF4AF8A0F00 : 0              
+0934 - 4 Bytes           7FF4ACCC2A04 : 0              7FF4AF8A0F04 : 0              
+0938 - 4 Bytes           7FF4ACCC2A08 : 0              7FF4AF8A0F08 : 0              
+093C - 4 Bytes           7FF4ACCC2A0C : 0              7FF4AF8A0F0C : 0              
+0940 - 4 Bytes           7FF4ACCC2A10 : 0              7FF4AF8A0F10 : 0              
+0944 - 4 Bytes           7FF4ACCC2A14 : 0              7FF4AF8A0F14 : 0              
+0948 - 4 Bytes           7FF4ACCC2A18 : 0              7FF4AF8A0F18 : 0              
+094C - 4 Bytes           7FF4ACCC2A1C : 0              7FF4AF8A0F1C : 0              
+0950 - 4 Bytes           7FF4ACCC2A20 : 0              7FF4AF8A0F20 : 0              
+0954 - 4 Bytes           7FF4ACCC2A24 : 0              7FF4AF8A0F24 : 0              
+0958 - 4 Bytes           7FF4ACCC2A28 : 0              7FF4AF8A0F28 : 0              
+095C - 4 Bytes           7FF4ACCC2A2C : 0              7FF4AF8A0F2C : 0              
+0960 - 4 Bytes           7FF4ACCC2A30 : 0              7FF4AF8A0F30 : 0              
+0964 - 4 Bytes           7FF4ACCC2A34 : 0              7FF4AF8A0F34 : 0              
+0968 - 4 Bytes           7FF4ACCC2A38 : 0              7FF4AF8A0F38 : 0              
+096C - 4 Bytes           7FF4ACCC2A3C : 0              7FF4AF8A0F3C : 0              
+0970 - 4 Bytes           7FF4ACCC2A40 : 0              7FF4AF8A0F40 : 0              
+0974 - 4 Bytes           7FF4ACCC2A44 : 0              7FF4AF8A0F44 : 0              
+0978 - 4 Bytes           7FF4ACCC2A48 : 0              7FF4AF8A0F48 : 0              
+097C - 4 Bytes           7FF4ACCC2A4C : 0              7FF4AF8A0F4C : 0              
+0980 - 4 Bytes           7FF4ACCC2A50 : 0              7FF4AF8A0F50 : 0              
+0984 - 4 Bytes           7FF4ACCC2A54 : 0              7FF4AF8A0F54 : 0              
+0988 - 4 Bytes           7FF4ACCC2A58 : 0              7FF4AF8A0F58 : 0              
+098C - 4 Bytes           7FF4ACCC2A5C : 0              7FF4AF8A0F5C : 0              
+0990 - 4 Bytes           7FF4ACCC2A60 : 0              7FF4AF8A0F60 : 0              
+0994 - 4 Bytes           7FF4ACCC2A64 : 0              7FF4AF8A0F64 : 0              
+0998 - 4 Bytes           7FF4ACCC2A68 : 1              7FF4AF8A0F68 : 0              
+099C - 4 Bytes           7FF4ACCC2A6C : 0              7FF4AF8A0F6C : 0              
+09A0 - 4 Bytes           7FF4ACCC2A70 : 567            7FF4AF8A0F70 : 0              
+09A4 - 4 Bytes           7FF4ACCC2A74 : 518            7FF4AF8A0F74 : 0              
+09A8 - 4 Bytes           7FF4ACCC2A78 : 287            7FF4AF8A0F78 : 0              
+09AC - 4 Bytes           7FF4ACCC2A7C : 0              7FF4AF8A0F7C : 0              
+09B0 - 4 Bytes           7FF4ACCC2A80 : 0              7FF4AF8A0F80 : 0              
+09B4 - 4 Bytes           7FF4ACCC2A84 : 0              7FF4AF8A0F84 : 0              
+09B8 - 4 Bytes           7FF4ACCC2A88 : 0              7FF4AF8A0F88 : 0              
+09BC - 4 Bytes           7FF4ACCC2A8C : 0              7FF4AF8A0F8C : 0              
+09C0 - 4 Bytes           7FF4ACCC2A90 : 0              7FF4AF8A0F90 : 0              
+09C4 - 4 Bytes           7FF4ACCC2A94 : 0              7FF4AF8A0F94 : 0              
+09C8 - 4 Bytes           7FF4ACCC2A98 : 0              7FF4AF8A0F98 : 0              
+09CC - 4 Bytes           7FF4ACCC2A9C : 0              7FF4AF8A0F9C : 0              
+09D0 - 4 Bytes           7FF4ACCC2AA0 : 0              7FF4AF8A0FA0 : 0              
+09D4 - 4 Bytes           7FF4ACCC2AA4 : 0              7FF4AF8A0FA4 : 0              
+09D8 - 4 Bytes           7FF4ACCC2AA8 : 0              7FF4AF8A0FA8 : 0              
+09DC - 4 Bytes           7FF4ACCC2AAC : 0              7FF4AF8A0FAC : 0              
+09E0 - 4 Bytes           7FF4ACCC2AB0 : 0              7FF4AF8A0FB0 : 0              
+09E4 - 4 Bytes           7FF4ACCC2AB4 : 0              7FF4AF8A0FB4 : 0              
+09E8 - 4 Bytes           7FF4ACCC2AB8 : 3              7FF4AF8A0FB8 : 0              
+09EC - 4 Bytes           7FF4ACCC2ABC : 0              7FF4AF8A0FBC : 0              
+09F0 - 4 Bytes           7FF4ACCC2AC0 : 0              7FF4AF8A0FC0 : 0              
+09F4 - 4 Bytes           7FF4ACCC2AC4 : 0              7FF4AF8A0FC4 : 0              
+09F8 - 4 Bytes           7FF4ACCC2AC8 : 0              7FF4AF8A0FC8 : 0              
+09FC - 4 Bytes           7FF4ACCC2ACC : 0              7FF4AF8A0FCC : 0              
+0A00 - 4 Bytes           7FF4ACCC2AD0 : 0              7FF4AF8A0FD0 : 0              
+0A04 - 4 Bytes           7FF4ACCC2AD4 : 0              7FF4AF8A0FD4 : 0              
+0A08 - 4 Bytes           7FF4ACCC2AD8 : 0              7FF4AF8A0FD8 : 0              
+0A0C - 4 Bytes           7FF4ACCC2ADC : 0              7FF4AF8A0FDC : 0              
+0A10 - 4 Bytes           7FF4ACCC2AE0 : 0              7FF4AF8A0FE0 : 0              
+0A14 - 4 Bytes           7FF4ACCC2AE4 : 0              7FF4AF8A0FE4 : 0              
+0A18 - 4 Bytes           7FF4ACCC2AE8 : 0              7FF4AF8A0FE8 : 0              
+0A1C - 4 Bytes           7FF4ACCC2AEC : 0              7FF4AF8A0FEC : 0              
+0A20 - 4 Bytes           7FF4ACCC2AF0 : 0              7FF4AF8A0FF0 : 0              
+0A24 - 4 Bytes           7FF4ACCC2AF4 : 0              7FF4AF8A0FF4 : 0              
+0A28 - 4 Bytes           7FF4ACCC2AF8 : 0              7FF4AF8A0FF8 : 0              
+0A2C - 4 Bytes           7FF4ACCC2AFC : 0              7FF4AF8A0FFC : 0              
+0A30 - 4 Bytes           7FF4ACCC2B00 : 0              7FF4AF8A1000 : 0              
+0A34 - 4 Bytes           7FF4ACCC2B04 : 0              7FF4AF8A1004 : 0              
+0A38 - 4 Bytes           7FF4ACCC2B08 : 0              7FF4AF8A1008 : 0              
+0A3C - 4 Bytes           7FF4ACCC2B0C : 0              7FF4AF8A100C : 0              
+0A40 - 4 Bytes           7FF4ACCC2B10 : 0              7FF4AF8A1010 : 0              
+0A44 - 4 Bytes           7FF4ACCC2B14 : 0              7FF4AF8A1014 : 0              
+0A48 - 4 Bytes           7FF4ACCC2B18 : 0              7FF4AF8A1018 : 0              
+0A4C - 4 Bytes           7FF4ACCC2B1C : 0              7FF4AF8A101C : 0              
+0A50 - 4 Bytes           7FF4ACCC2B20 : 0              7FF4AF8A1020 : 0              
+0A54 - 4 Bytes           7FF4ACCC2B24 : 0              7FF4AF8A1024 : 0              
+0A58 - 4 Bytes           7FF4ACCC2B28 : 0              7FF4AF8A1028 : 0              
+0A5C - 4 Bytes           7FF4ACCC2B2C : 0              7FF4AF8A102C : 0              
+0A60 - 4 Bytes           7FF4ACCC2B30 : 0              7FF4AF8A1030 : 0              
+0A64 - 4 Bytes           7FF4ACCC2B34 : 0              7FF4AF8A1034 : 0              
+0A68 - 4 Bytes           7FF4ACCC2B38 : 0              7FF4AF8A1038 : 0              
+0A6C - 4 Bytes           7FF4ACCC2B3C : 0              7FF4AF8A103C : 0              
+0A70 - 4 Bytes           7FF4ACCC2B40 : 0              7FF4AF8A1040 : 0              
+0A74 - 4 Bytes           7FF4ACCC2B44 : 0              7FF4AF8A1044 : 0              
+0A78 - 4 Bytes           7FF4ACCC2B48 : 0              7FF4AF8A1048 : 0              
+0A7C - 4 Bytes           7FF4ACCC2B4C : 0              7FF4AF8A104C : 0              
+0A80 - Pointer           7FF4ACCC2B50 : P->7FF4AFACF1807FF4AF8A1050 : P->00000000    
+0A88 - Pointer           7FF4ACCC2B58 : P->7FF4AFACF1807FF4AF8A1058 : P->00000000    
+0A90 - Pointer           7FF4ACCC2B60 : P->7FF4AFACF1907FF4AF8A1060 : P->00000000    
+0A98 - Pointer to instance of DLKRD::HeapAllocator<DLKR::DLDynamicHeap<DLKR::DLBiHeapStrategy<DLKR::DLRobustHeap,DLKR::DLMultiThreadingPolicy> > >7FF4ACCC2B68 : P->14463BF98   7FF4AF8A1068 : P->00000000    
+0AA0 - 4 Bytes           7FF4ACCC2B70 : 0              7FF4AF8A1070 : 0              
+0AA4 - 4 Bytes           7FF4ACCC2B74 : 0              7FF4AF8A1074 : 0              
+0AA8 - Pointer           7FF4ACCC2B78 : P->7FF4ACCC2B987FF4AF8A1078 : P->00000000    
+0AB0 - 4 Bytes           7FF4ACCC2B80 : 0              7FF4AF8A1080 : 0              
+0AB4 - 4 Bytes           7FF4ACCC2B84 : 0              7FF4AF8A1084 : 0              
+0AB8 - 4 Bytes           7FF4ACCC2B88 : 12             7FF4AF8A1088 : 0              
+0ABC - 4 Bytes           7FF4ACCC2B8C : 0              7FF4AF8A108C : 0              
+0AC0 - 4 Bytes           7FF4ACCC2B90 : 63             7FF4AF8A1090 : 0              
+0AC4 - 4 Bytes           7FF4ACCC2B94 : 0              7FF4AF8A1094 : 0              
+0AC8 - Unicode String    7FF4ACCC2B98 : DamageM        7FF4AF8A1098 :                
+0AD5 - Byte              7FF4ACCC2BA5 : 0              7FF4AF8A10A5 : 0              
+0AD6 - Unicode String    7FF4ACCC2BA6 : idd            7FF4AF8A10A6 :                
+0ADC - 4 Bytes (Hex)     7FF4ACCC2BAC : 0065006C       7FF4AF8A10AC : 00000000       
+0AE0 - 4 Bytes (Hex)     7FF4ACCC2BB0 : 00670000       7FF4AF8A10B0 : 00000000       
+0AE4 - 4 Bytes (Hex)     7FF4ACCC2BB4 : 00740068       7FF4AF8A10B4 : 00000000       
+0AE8 - 4 Bytes           7FF4ACCC2BB8 : 49             7FF4AF8A10B8 : 0              
+0AEC - 4 Bytes (Hex)     7FF4ACCC2BBC : 006B0063       7FF4AF8A10BC : 00000000       
+0AF0 - 4 Bytes (Hex)     7FF4ACCC2BC0 : 00730000       7FF4AF8A10C0 : 00000000       
+0AF4 - 4 Bytes           7FF4ACCC2BC4 : 0              7FF4AF8A10C4 : 0              
+0AF8 - 4 Bytes           7FF4ACCC2BC8 : 48             7FF4AF8A10C8 : 0              
+0AFC - 4 Bytes           7FF4ACCC2BCC : 0              7FF4AF8A10CC : 0              
+0B00 - Pointer           7FF4ACCC2BD0 : P->1417D9802   7FF4AF8A10D0 : P->00000000    
+0B08 - 4 Bytes           7FF4ACCC2BD8 : 8              7FF4AF8A10D8 : 0              
+0B0C - 4 Bytes           7FF4ACCC2BDC : 0              7FF4AF8A10DC : 0              
+0B10 - Pointer           7FF4ACCC2BE0 : P->14178852E   7FF4AF8A10E0 : P->00000000    
+0B18 - Pointer           7FF4ACCC2BE8 : P->14463BFA8   7FF4AF8A10E8 : P->00000000    
+0B20 - Pointer to instance of AppMenu::FeEmergencyNotice7FF4ACCC2BF0 : P->7FF49171E9407FF4AF8A10F0 : P->00000000    
+0B28 - Pointer           7FF4ACCC2BF8 : P->7FF4ACCC20B07FF4AF8A10F8 : P->00000000    
+0B30 - Pointer           7FF4ACCC2C00 : P->1400109EC   7FF4AF8A1100 : P->00000000    
+0B38 - 4 Bytes           7FF4ACCC2C08 : 8              7FF4AF8A1108 : 0              
+0B3C - Double            7FF4ACCC2C0C : 52234.34375    7FF4AF8A110C : 0              
+0B44 - 4 Bytes           7FF4ACCC2C14 : 1              7FF4AF8A1114 : 0              
+0B48 - 4 Bytes           7FF4ACCC2C18 : 520            7FF4AF8A1118 : 0              
+0B4C - 4 Bytes           7FF4ACCC2C1C : 0              7FF4AF8A111C : 0              
+0B50 - 4 Bytes           7FF4ACCC2C20 : 1              7FF4AF8A1120 : 0              
+0B54 - 4 Bytes           7FF4ACCC2C24 : 0              7FF4AF8A1124 : 0              
+0B58 - 4 Bytes           7FF4ACCC2C28 : 0              7FF4AF8A1128 : 0              
+0B5C - 4 Bytes           7FF4ACCC2C2C : 0              7FF4AF8A112C : 0              
+0B60 - Byte              7FF4ACCC2C30 : 208            7FF4AF8A1130 : 0              
+0B61 - Byte              7FF4ACCC2C31 : 55             7FF4AF8A1131 : 0              
+0B62 - Byte              7FF4ACCC2C32 : 115            7FF4AF8A1132 : 0              
+0B63 - Byte              7FF4ACCC2C33 : 66             7FF4AF8A1133 : 0              
+0B64 - 4 Bytes           7FF4ACCC2C34 : 1              7FF4AF8A1134 : 0              
+0B68 - Pointer           7FF4ACCC2C38 : P->3C998383    7FF4AF8A1138 : P->00000000    
+0B70 - 4 Bytes           7FF4ACCC2C40 : 0              7FF4AF8A1140 : 0              
+0B74 - 4 Bytes           7FF4ACCC2C44 : 0              7FF4AF8A1144 : 0              
+0B78 - 4 Bytes           7FF4ACCC2C48 : 0              7FF4AF8A1148 : 0              
+0B7C - 4 Bytes           7FF4ACCC2C4C : 0              7FF4AF8A114C : 0              
+0B80 - 4 Bytes           7FF4ACCC2C50 : 0              7FF4AF8A1150 : 0              
+0B84 - 4 Bytes           7FF4ACCC2C54 : 0              7FF4AF8A1154 : 0              
+0B88 - Pointer to instance of DLKRD::HeapAllocator<DLKR::DLDynamicHeap<DLKR::DLBiHeapStrategy<DLKR::DLRobustHeap,DLKR::DLMultiThreadingPolicy> > >7FF4ACCC2C58 : P->14463BF98   7FF4AF8A1158 : P->00000000    
+0B90 - Float             7FF4ACCC2C60 : 1              7FF4AF8A1160 : 0              
+0B94 - 4 Bytes           7FF4ACCC2C64 : 0              7FF4AF8A1164 : 0              
+0B98 - 4 Bytes           7FF4ACCC2C68 : 214            7FF4AF8A1168 : 0              
+0B9C - 4 Bytes           7FF4ACCC2C6C : 282            7FF4AF8A116C : 0              
+0BA0 - 4 Bytes           7FF4ACCC2C70 : 293            7FF4AF8A1170 : 0              
+0BA4 - 4 Bytes           7FF4ACCC2C74 : 287            7FF4AF8A1174 : 0              
+0BA8 - 4 Bytes           7FF4ACCC2C78 : 410            7FF4AF8A1178 : 0              
+0BAC - 4 Bytes           7FF4ACCC2C7C : 201            7FF4AF8A117C : 0              
+0BB0 - 4 Bytes           7FF4ACCC2C80 : 205            7FF4AF8A1180 : 0              
+0BB4 - 4 Bytes           7FF4ACCC2C84 : 346            7FF4AF8A1184 : 0              
+0BB8 - 4 Bytes           7FF4ACCC2C88 : 345            7FF4AF8A1188 : 0              
+0BBC - 4 Bytes           7FF4ACCC2C8C : 202            7FF4AF8A118C : 0              
+0BC0 - 4 Bytes           7FF4ACCC2C90 : 256            7FF4AF8A1190 : 0              
+0BC4 - 4 Bytes           7FF4ACCC2C94 : 255            7FF4AF8A1194 : 0              
+0BC8 - 4 Bytes           7FF4ACCC2C98 : 42             7FF4AF8A1198 : 0              
+0BCC - 4 Bytes           7FF4ACCC2C9C : 41             7FF4AF8A119C : 0              
+0BD0 - 4 Bytes           7FF4ACCC2CA0 : 4294967295     7FF4AF8A11A0 : 0              
+0BD4 - 4 Bytes           7FF4ACCC2CA4 : 4294967295     7FF4AF8A11A4 : 0              
+0BD8 - 4 Bytes           7FF4ACCC2CA8 : 4294967295     7FF4AF8A11A8 : 0              
+0BDC - 4 Bytes           7FF4ACCC2CAC : 4294967295     7FF4AF8A11AC : 0              
+0BE0 - 4 Bytes           7FF4ACCC2CB0 : 4294967295     7FF4AF8A11B0 : 0              
+0BE4 - 4 Bytes           7FF4ACCC2CB4 : 4294967295     7FF4AF8A11B4 : 0              
+0BE8 - 4 Bytes           7FF4ACCC2CB8 : 4294967295     7FF4AF8A11B8 : 0              
+0BEC - 4 Bytes           7FF4ACCC2CBC : 4294967295     7FF4AF8A11BC : 0              
+0BF0 - 4 Bytes           7FF4ACCC2CC0 : 4294967295     7FF4AF8A11C0 : 0              
+0BF4 - 4 Bytes           7FF4ACCC2CC4 : 4294967295     7FF4AF8A11C4 : 0              
+0BF8 - 4 Bytes           7FF4ACCC2CC8 : 4294967295     7FF4AF8A11C8 : 0              
+0BFC - 4 Bytes           7FF4ACCC2CCC : 310            7FF4AF8A11CC : 0              
+0C00 - 4 Bytes           7FF4ACCC2CD0 : 311            7FF4AF8A11D0 : 0              
+0C04 - 4 Bytes           7FF4ACCC2CD4 : 312            7FF4AF8A11D4 : 0              
+0C08 - 4 Bytes           7FF4ACCC2CD8 : 313            7FF4AF8A11D8 : 0              
+0C0C - 4 Bytes           7FF4ACCC2CDC : 347            7FF4AF8A11DC : 0              
+0C10 - 4 Bytes           7FF4ACCC2CE0 : 454            7FF4AF8A11E0 : 0              
+0C14 - 4 Bytes           7FF4ACCC2CE4 : 455            7FF4AF8A11E4 : 0              
+0C18 - 4 Bytes           7FF4ACCC2CE8 : 0              7FF4AF8A11E8 : 0              
+0C1C - 4 Bytes           7FF4ACCC2CEC : 0              7FF4AF8A11EC : 0              
+0C20 - 4 Bytes           7FF4ACCC2CF0 : 32             7FF4AF8A11F0 : 0              
+0C24 - 4 Bytes           7FF4ACCC2CF4 : 0              7FF4AF8A11F4 : 0              
+0C28 - Pointer to instance of NS_SPRJ::HvkAnim7FF4ACCC2CF8 : P->7FF4A85E2F307FF4AF8A11F8 : P->00000000    
+0C30 - Pointer           7FF4ACCC2D00 : P->7FF4ACCC2E707FF4AF8A1200 : P->00000000    
+0C38 - Pointer           7FF4ACCC2D08 : P->7FF4ACCC2E707FF4AF8A1208 : P->00000000    
+0C40 - Pointer           7FF4ACCC2D10 : P->7FF4ACCC30707FF4AF8A1210 : P->00000000    
+0C48 - Pointer to instance of DLKRD::HeapAllocator<DLKR::DLDynamicHeap<DLKR::DLBiHeapStrategy<DLKR::DLRobustHeap,DLKR::DLMultiThreadingPolicy> > >7FF4ACCC2D18 : P->14463BF98   7FF4AF8A1218 : P->00000000    
+0C50 - 4 Bytes           7FF4ACCC2D20 : 0              7FF4AF8A1220 : 0              
+0C54 - 4 Bytes           7FF4ACCC2D24 : 0              7FF4AF8A1224 : 0              
+0C58 - 4 Bytes           7FF4ACCC2D28 : 0              7FF4AF8A1228 : 0              
+0C5C - 4 Bytes           7FF4ACCC2D2C : 0              7FF4AF8A122C : 0              
+0C60 - 4 Bytes (Hex)     7FF4ACCC2D30 : 80000000       7FF4AF8A1230 : 00000000       
+0C64 - 4 Bytes           7FF4ACCC2D34 : 0              7FF4AF8A1234 : 0              
+0C68 - 4 Bytes (Hex)     7FF4ACCC2D38 : 80000000       7FF4AF8A1238 : 00000000       
+0C6C - 4 Bytes           7FF4ACCC2D3C : 0              7FF4AF8A123C : 0              
+0C70 - 4 Bytes           7FF4ACCC2D40 : 0              7FF4AF8A1240 : 0              
+0C74 - 4 Bytes           7FF4ACCC2D44 : 0              7FF4AF8A1244 : 0              
+0C78 - Pointer to instance of hkbManualSelectorGenerator7FF4ACCC2D48 : P->7FF4A9EC13507FF4AF8A1248 : P->00000000    
+0C80 - 4 Bytes           7FF4ACCC2D50 : 0              7FF4AF8A1250 : 920927488      
+0C84 - Float             7FF4ACCC2D54 : 10             7FF4AF8A1254 : 4.59009325E-41 
+0C88 - Float             7FF4ACCC2D58 : 1              7FF4AF8A1258 : 0              
+0C8C - 4 Bytes           7FF4ACCC2D5C : 0              7FF4AF8A125C : 0              
+0C90 - 4 Bytes           7FF4ACCC2D60 : 1              7FF4AF8A1260 : 65536          
+0C94 - 4 Bytes (Hex)     7FF4ACCC2D64 : 01000000       7FF4AF8A1264 : 00000000       
+0C98 - 4 Bytes           7FF4ACCC2D68 : 0              7FF4AF8A1268 : 920928816      
+0C9C - 4 Bytes           7FF4ACCC2D6C : 0              7FF4AF8A126C : 32756          
+0CA0 - 4 Bytes           7FF4ACCC2D70 : 0              7FF4AF8A1270 : 0              
+0CA4 - 4 Bytes           7FF4ACCC2D74 : 0              7FF4AF8A1274 : 0              
+0CA8 - 4 Bytes           7FF4ACCC2D78 : 0              7FF4AF8A1278 : 920929440      
+0CAC - 4 Bytes           7FF4ACCC2D7C : 0              7FF4AF8A127C : 32756          
+0CB0 - 4 Bytes           7FF4ACCC2D80 : 0              7FF4AF8A1280 : 920928992      
+0CB4 - 4 Bytes           7FF4ACCC2D84 : 0              7FF4AF8A1284 : 32756          
+0CB8 - 4 Bytes           7FF4ACCC2D88 : 7              7FF4AF8A1288 : 1              
+0CBC - 4 Bytes           7FF4ACCC2D8C : 0              7FF4AF8A128C : 0              
+0CC0 - Pointer to instance of DLKRD::HeapAllocator<DLKR::Win32RuntimeHeapImpl>7FF4ACCC2D90 : P->144911CB0   7FF4AF8A1290 : P->7F7FFFFF7F7FFFFF
+0CC8 - 4 Bytes           7FF4ACCC2D98 : 1              7FF4AF8A1298 : 2139095039     
+0CCC - 4 Bytes           7FF4ACCC2D9C : 0              7FF4AF8A129C : 0              
+0CD0 - 4 Bytes           7FF4ACCC2DA0 : 0              7FF4AF8A12A0 : 0              
+0CD4 - 4 Bytes           7FF4ACCC2DA4 : 0              7FF4AF8A12A4 : 0              
+0CD8 - 4 Bytes           7FF4ACCC2DA8 : 0              7FF4AF8A12A8 : 0              
+0CDC - 4 Bytes           7FF4ACCC2DAC : 0              7FF4AF8A12AC : 0              
+0CE0 - 4 Bytes           7FF4ACCC2DB0 : 0              7FF4AF8A12B0 : 0              
+0CE4 - 4 Bytes           7FF4ACCC2DB4 : 0              7FF4AF8A12B4 : 0              
+0CE8 - 4 Bytes           7FF4ACCC2DB8 : 0              7FF4AF8A12B8 : 0              
+0CEC - 4 Bytes           7FF4ACCC2DBC : 0              7FF4AF8A12BC : 0              
+0CF0 - Pointer to instance of DLKRD::HeapAllocator<DLKR::DLDynamicHeap<DLKR::DLDefaultHeapStrategy<DLKR::DLSmallObjectHeapWrapper<DLKR::DLRobustHeap,0,16384,256,16>,DLKR::DLMultiThreadingPolicy> > >7FF4ACCC2DC0 : P->14463F878   7FF4AF8A12C0 : P->00000000    
+0CF8 - 4 Bytes           7FF4ACCC2DC8 : 0              7FF4AF8A12C8 : 0              
+0CFC - 4 Bytes           7FF4ACCC2DCC : 0              7FF4AF8A12CC : 0              
+0D00 - Pointer           7FF4ACCC2DD0 : P->7FF3FAE88E007FF4AF8A12D0 : P->FFFFFFFFFFFFFFFF
+0D08 - 4 Bytes           7FF4ACCC2DD8 : 0              7FF4AF8A12D8 : 0              
+0D0C - 4 Bytes           7FF4ACCC2DDC : 0              7FF4AF8A12DC : 0              
+0D10 - 4 Bytes           7FF4ACCC2DE0 : 0              7FF4AF8A12E0 : 0              
+0D14 - 4 Bytes           7FF4ACCC2DE4 : 0              7FF4AF8A12E4 : 0              
+0D18 - 4 Bytes           7FF4ACCC2DE8 : 0              7FF4AF8A12E8 : 0              
+0D1C - 4 Bytes           7FF4ACCC2DEC : 0              7FF4AF8A12EC : 0              
+0D20 - 4 Bytes           7FF4ACCC2DF0 : 0              7FF4AF8A12F0 : 0              
+0D24 - 4 Bytes           7FF4ACCC2DF4 : 0              7FF4AF8A12F4 : 0              
+0D28 - Pointer to instance of DLKRD::HeapAllocator<DLKR::DLDynamicHeap<DLKR::DLDefaultHeapStrategy<DLKR::DLSmallObjectHeapWrapper<DLKR::DLRobustHeap,0,16384,256,16>,DLKR::DLMultiThreadingPolicy> > >7FF4ACCC2DF8 : P->14463F878   7FF4AF8A12F8 : P->00000000    
+0D30 - Pointer           7FF4ACCC2E00 : P->7FF3FAE88E107FF4AF8A1300 : P->100000000   
+0D38 - 4 Bytes           7FF4ACCC2E08 : 0              7FF4AF8A1308 : 4211626784     
+0D3C - 4 Bytes           7FF4ACCC2E0C : 0              7FF4AF8A130C : 32755          
+0D40 - 4 Bytes           7FF4ACCC2E10 : 0              7FF4AF8A1310 : 0              
+0D44 - 4 Bytes           7FF4ACCC2E14 : 0              7FF4AF8A1314 : 0              
+0D48 - 4 Bytes           7FF4ACCC2E18 : 0              7FF4AF8A1318 : 19             
+0D4C - 4 Bytes           7FF4ACCC2E1C : 0              7FF4AF8A131C : 0              
+0D50 - 4 Bytes           7FF4ACCC2E20 : 0              7FF4AF8A1320 : 23             
+0D54 - 4 Bytes           7FF4ACCC2E24 : 0              7FF4AF8A1324 : 0              
+0D58 - Pointer to instance of DLKRD::HeapAllocator<DLKR::DLDynamicHeap<DLKR::DLDefaultHeapStrategy<DLKR::DLSmallObjectHeapWrapper<DLKR::DLRobustHeap,0,16384,256,16>,DLKR::DLMultiThreadingPolicy> > >7FF4ACCC2E28 : P->14463F878   7FF4AF8A1328 : P->14463F878   
+0D60 - 4 Bytes           7FF4ACCC2E30 : 0              7FF4AF8A1330 : 1              
+0D64 - 4 Bytes           7FF4ACCC2E34 : 0              7FF4AF8A1334 : 0              
+0D68 - 4 Bytes           7FF4ACCC2E38 : 0              7FF4AF8A1338 : 0              
+0D6C - 4 Bytes           7FF4ACCC2E3C : 0              7FF4AF8A133C : 0              
+0D70 - 4 Bytes           7FF4ACCC2E40 : 0              7FF4AF8A1340 : 0              
+0D74 - 4 Bytes           7FF4ACCC2E44 : 0              7FF4AF8A1344 : 0              
+0D78 - 4 Bytes           7FF4ACCC2E48 : 0              7FF4AF8A1348 : 2945061747     
+0D7C - 4 Bytes           7FF4ACCC2E4C : 0              7FF4AF8A134C : 32756          
+0D80 - Pointer to instance of DLKRD::HeapAllocator<DLKR::DLDynamicHeap<DLKR::DLDefaultHeapStrategy<DLKR::DLSmallObjectHeapWrapper<DLKR::DLRobustHeap,0,16384,256,16>,DLKR::DLMultiThreadingPolicy> > >7FF4ACCC2E50 : P->14463F878   7FF4AF8A1350 : P->00000002    
+0D88 - 4 Bytes           7FF4ACCC2E58 : 0              7FF4AF8A1358 : 2944370832     
+0D8C - 4 Bytes           7FF4ACCC2E5C : 0              7FF4AF8A135C : 32756          
+0D90 - 4 Bytes           7FF4ACCC2E60 : 0              7FF4AF8A1360 : 2944371120     
+0D94 - 4 Bytes           7FF4ACCC2E64 : 0              7FF4AF8A1364 : 32756          
+0D98 - Pointer           7FF4ACCC2E68 : P->7FF4ACCC30737FF4AF8A1368 : P->7FF4AF7F8A40
+0DA0 - 4 Bytes           7FF4ACCC2E70 : 261            7FF4AF8A1370 : 2944371552     
+0DA4 - 4 Bytes           7FF4ACCC2E74 : 0              7FF4AF8A1374 : 32756          
+0DA8 - 4 Bytes           7FF4ACCC2E78 : 0              7FF4AF8A1378 : 2945061811     
+0DAC - Double            7FF4ACCC2E7C : -0.0033781435347FF4AF8A137C : 1.06099951384407E-313
+0DB4 - 4 Bytes           7FF4ACCC2E84 : 0              7FF4AF8A1384 : 0              
+0DB8 - Float             7FF4ACCC2E88 : -0.3905055225  7FF4AF8A1388 : -2.093070162E-11
+0DBC - Float             7FF4ACCC2E8C : 280.5510864    7FF4AF8A138C : 4.59009325E-41 
+0DC0 - Double            7FF4ACCC2E90 : 0.0078125      7FF4AF8A1390 : 6.95095488417937E-310
+0DC8 - 4 Bytes           7FF4ACCC2E98 : 0              7FF4AF8A1398 : 2944372016     
+0DCC - Float             7FF4ACCC2E9C : -38.51618958   7FF4AF8A139C : 4.59009325E-41 
+0DD0 - Pointer           7FF4ACCC2EA0 : P->3EC7F057    7FF4AF8A13A0 : P->7FF4AF7F8E30
+0DD8 - Float             7FF4ACCC2EA8 : -0.9206005931  7FF4AF8A13A8 : -2.093242246E-11
+0DDC - Float             7FF4ACCC2EAC : 633.0223999    7FF4AF8A13AC : 4.59009325E-41 
+0DE0 - 4 Bytes           7FF4ACCC2EB0 : 211            7FF4AF8A13B0 : 1147387800     
+0DE4 - 4 Bytes           7FF4ACCC2EB4 : 0              7FF4AF8A13B4 : 1              
+0DE8 - 4 Bytes           7FF4ACCC2EB8 : 0              7FF4AF8A13B8 : 2945061971     
+0DEC - Double            7FF4ACCC2EBC : -0.0033781398087FF4AF8A13BC : 6622839570463.99
+0DF4 - 4 Bytes           7FF4ACCC2EC4 : 0              7FF4AF8A13C4 : 1              
+0DF8 - Float             7FF4ACCC2EC8 : -0.3905057311  7FF4AF8A13C8 : 62.08651733    
+0DFC - Float             7FF4ACCC2ECC : 280.4358215    7FF4AF8A13CC : 1.401298464E-45
+0E00 - Double            7FF4ACCC2ED0 : 0.0078125      7FF4AF8A13D0 : 6.95084254874145E-310
+0E08 - 4 Bytes           7FF4ACCC2ED8 : 0              7FF4AF8A13D8 : 0              
+0E0C - Float             7FF4ACCC2EDC : -38.16903687   7FF4AF8A13DC : 0              
+0E10 - Pointer           7FF4ACCC2EE0 : P->3EC7F05E    7FF4AF8A13E0 : P->00000009    
+0E18 - Float             7FF4ACCC2EE8 : -0.9206004739  7FF4AF8A13E8 : 2.101947696E-44
+0E1C - Float             7FF4ACCC2EEC : 632.5390625    7FF4AF8A13EC : 0              
+0E20 - 4 Bytes           7FF4ACCC2EF0 : 0              7FF4AF8A13F0 : 1147392760     
+0E24 - 4 Bytes           7FF4ACCC2EF4 : 0              7FF4AF8A13F4 : 1              
+0E28 - 4 Bytes           7FF4ACCC2EF8 : 0              7FF4AF8A13F8 : 140000001      
+0E2C - 4 Bytes           7FF4ACCC2EFC : 0              7FF4AF8A13FC : 40             
+0E30 - 4 Bytes           7FF4ACCC2F00 : 0              7FF4AF8A1400 : 0              
+0E34 - 4 Bytes           7FF4ACCC2F04 : 0              7FF4AF8A1404 : 1              
+0E38 - 4 Bytes           7FF4ACCC2F08 : 0              7FF4AF8A1408 : 458752256      
+0E3C - 4 Bytes           7FF4ACCC2F0C : 0              7FF4AF8A140C : 32756          
+0E40 - 4 Bytes           7FF4ACCC2F10 : 0              7FF4AF8A1410 : 0              
+0E44 - 4 Bytes           7FF4ACCC2F14 : 0              7FF4AF8A1414 : 0              
+0E48 - 4 Bytes           7FF4ACCC2F18 : 0              7FF4AF8A1418 : 1              
+0E4C - 4 Bytes           7FF4ACCC2F1C : 0              7FF4AF8A141C : 0              
+0E50 - 4 Bytes           7FF4ACCC2F20 : 0              7FF4AF8A1420 : 458752296      
+0E54 - 4 Bytes           7FF4ACCC2F24 : 0              7FF4AF8A1424 : 32756          
+0E58 - 4 Bytes           7FF4ACCC2F28 : 0              7FF4AF8A1428 : 1117263856     
+0E5C - 4 Bytes           7FF4ACCC2F2C : 0              7FF4AF8A142C : 1              
+0E60 - 4 Bytes           7FF4ACCC2F30 : 0              7FF4AF8A1430 : 519369744      
+0E64 - 4 Bytes           7FF4ACCC2F34 : 0              7FF4AF8A1434 : 32756          
+0E68 - 4 Bytes           7FF4ACCC2F38 : 0              7FF4AF8A1438 : 0              
+0E6C - 4 Bytes           7FF4ACCC2F3C : 0              7FF4AF8A143C : 0              
+0E70 - 4 Bytes           7FF4ACCC2F40 : 0              7FF4AF8A1440 : 0              
+0E74 - 4 Bytes           7FF4ACCC2F44 : 0              7FF4AF8A1444 : 0              
+0E78 - 4 Bytes           7FF4ACCC2F48 : 0              7FF4AF8A1448 : 0              
+0E7C - 4 Bytes           7FF4ACCC2F4C : 0              7FF4AF8A144C : 0              
+0E80 - 4 Bytes           7FF4ACCC2F50 : 0              7FF4AF8A1450 : 1138107248     
+0E84 - 4 Bytes           7FF4ACCC2F54 : 0              7FF4AF8A1454 : 1              
+0E88 - 4 Bytes           7FF4ACCC2F58 : 0              7FF4AF8A1458 : 2945062067     
+0E8C - 4 Bytes           7FF4ACCC2F5C : 0              7FF4AF8A145C : 32756          
+0E90 - 4 Bytes           7FF4ACCC2F60 : 0              7FF4AF8A1460 : 1701           
+0E94 - 4 Bytes           7FF4ACCC2F64 : 0              7FF4AF8A1464 : 32756          
+0E98 - 4 Bytes           7FF4ACCC2F68 : 0              7FF4AF8A1468 : 2952413328     
+0E9C - 4 Bytes           7FF4ACCC2F6C : 0              7FF4AF8A146C : 32756          
+0EA0 - 4 Bytes           7FF4ACCC2F70 : 0              7FF4AF8A1470 : 2954640352     
+0EA4 - 4 Bytes           7FF4ACCC2F74 : 0              7FF4AF8A1474 : 32756          
+0EA8 - 4 Bytes           7FF4ACCC2F78 : 0              7FF4AF8A1478 : 1042983595     
+0EAC - 4 Bytes           7FF4ACCC2F7C : 0              7FF4AF8A147C : 0              
+0EB0 - 4 Bytes           7FF4ACCC2F80 : 0              7FF4AF8A1480 : 1147392512     
+0EB4 - 4 Bytes           7FF4ACCC2F84 : 0              7FF4AF8A1484 : 1              
+0EB8 - 4 Bytes           7FF4ACCC2F88 : 0              7FF4AF8A1488 : 2945117072     
+0EBC - 4 Bytes           7FF4ACCC2F8C : 0              7FF4AF8A148C : 32756          
+0EC0 - 4 Bytes           7FF4ACCC2F90 : 0              7FF4AF8A1490 : 0              
+0EC4 - 4 Bytes           7FF4ACCC2F94 : 0              7FF4AF8A1494 : 0              
+0EC8 - 4 Bytes           7FF4ACCC2F98 : 0              7FF4AF8A1498 : 1147387800     
+0ECC - 4 Bytes           7FF4ACCC2F9C : 0              7FF4AF8A149C : 1              
+0ED0 - 4 Bytes           7FF4ACCC2FA0 : 0              7FF4AF8A14A0 : 0              
+0ED4 - 4 Bytes           7FF4ACCC2FA4 : 0              7FF4AF8A14A4 : 4294967295     
+0ED8 - 4 Bytes           7FF4ACCC2FA8 : 0              7FF4AF8A14A8 : 0              
+0EDC - 4 Bytes           7FF4ACCC2FAC : 0              7FF4AF8A14AC : 0              
+0EE0 - 4 Bytes           7FF4ACCC2FB0 : 0              7FF4AF8A14B0 : 0              
+0EE4 - 4 Bytes           7FF4ACCC2FB4 : 0              7FF4AF8A14B4 : 0              
+0EE8 - 4 Bytes           7FF4ACCC2FB8 : 0              7FF4AF8A14B8 : 2945062099     
+0EEC - 4 Bytes           7FF4ACCC2FBC : 0              7FF4AF8A14BC : 32756          
+0EF0 - 4 Bytes           7FF4ACCC2FC0 : 0              7FF4AF8A14C0 : 4246876464     
+0EF4 - 4 Bytes           7FF4ACCC2FC4 : 0              7FF4AF8A14C4 : 32756          
+0EF8 - 4 Bytes           7FF4ACCC2FC8 : 0              7FF4AF8A14C8 : 4246876464     
+0EFC - 4 Bytes           7FF4ACCC2FCC : 0              7FF4AF8A14CC : 32756          
+0F00 - 4 Bytes           7FF4ACCC2FD0 : 0              7FF4AF8A14D0 : 2945812432     
+0F04 - 4 Bytes           7FF4ACCC2FD4 : 0              7FF4AF8A14D4 : 32756          
+0F08 - 4 Bytes           7FF4ACCC2FD8 : 0              7FF4AF8A14D8 : 2945062163     
+0F0C - 4 Bytes           7FF4ACCC2FDC : 0              7FF4AF8A14DC : 32756          
+0F10 - 4 Bytes           7FF4ACCC2FE0 : 0              7FF4AF8A14E0 : 3407981        
+0F14 - 4 Bytes           7FF4ACCC2FE4 : 0              7FF4AF8A14E4 : 6225968        
+0F18 - 4 Bytes           7FF4ACCC2FE8 : 0              7FF4AF8A14E8 : 3145776        
+0F1C - 4 Bytes           7FF4ACCC2FEC : 0              7FF4AF8A14EC : 3145823        
+0F20 - 4 Bytes           7FF4ACCC2FF0 : 0              7FF4AF8A14F0 : 6225968        
+0F24 - 4 Bytes           7FF4ACCC2FF4 : 0              7FF4AF8A14F4 : 3145776        
+0F28 - 4 Bytes           7FF4ACCC2FF8 : 0              7FF4AF8A14F8 : 3145823        
+0F2C - 4 Bytes           7FF4ACCC2FFC : 0              7FF4AF8A14FC : 3407920        
+0F30 - 4 Bytes           7FF4ACCC3000 : 0              7FF4AF8A1500 : 3276853        
+0F34 - 4 Bytes           7FF4ACCC3004 : 0              7FF4AF8A1504 : 48             
+0F38 - 4 Bytes           7FF4ACCC3008 : 0              7FF4AF8A1508 : 2945062162     
+0F3C - 4 Bytes           7FF4ACCC300C : 0              7FF4AF8A150C : 32756          
+0F40 - 4 Bytes           7FF4ACCC3010 : 0              7FF4AF8A1510 : 2945062096     
+0F44 - 4 Bytes           7FF4ACCC3014 : 0              7FF4AF8A1514 : 32756          
+0F48 - 4 Bytes           7FF4ACCC3018 : 0              7FF4AF8A1518 : 2945062643     
+0F4C - 4 Bytes           7FF4ACCC301C : 0              7FF4AF8A151C : 32756          
+0F50 - 4 Bytes           7FF4ACCC3020 : 0              7FF4AF8A1520 : 1115414824     
+0F54 - 4 Bytes           7FF4ACCC3024 : 0              7FF4AF8A1524 : 1              
+0F58 - 4 Bytes           7FF4ACCC3028 : 0              7FF4AF8A1528 : 2894241152     
+0F5C - 4 Bytes           7FF4ACCC302C : 0              7FF4AF8A152C : 32756          
+0F60 - 4 Bytes           7FF4ACCC3030 : 0              7FF4AF8A1530 : 999999         
+0F64 - 4 Bytes           7FF4ACCC3034 : 0              7FF4AF8A1534 : 999999         
+0F68 - 4 Bytes           7FF4ACCC3038 : 0              7FF4AF8A1538 : 4294967295     
+0F6C - 4 Bytes           7FF4ACCC303C : 0              7FF4AF8A153C : 4294967295     
+0F70 - 4 Bytes           7FF4ACCC3040 : 0              7FF4AF8A1540 : 999999         
+0F74 - 4 Bytes           7FF4ACCC3044 : 0              7FF4AF8A1544 : 999999         
+0F78 - 4 Bytes           7FF4ACCC3048 : 0              7FF4AF8A1548 : 4294967295     
+0F7C - 4 Bytes           7FF4ACCC304C : 0              7FF4AF8A154C : 4294967295     
+0F80 - 4 Bytes           7FF4ACCC3050 : 0              7FF4AF8A1550 : 999999         
+0F84 - 4 Bytes           7FF4ACCC3054 : 0              7FF4AF8A1554 : 999999         
+0F88 - 4 Bytes           7FF4ACCC3058 : 0              7FF4AF8A1558 : 4294967295     
+0F8C - 4 Bytes           7FF4ACCC305C : 0              7FF4AF8A155C : 4294967295     
+0F90 - 4 Bytes           7FF4ACCC3060 : 0              7FF4AF8A1560 : 999999         
+0F94 - 4 Bytes           7FF4ACCC3064 : 0              7FF4AF8A1564 : 999999         
+0F98 - 4 Bytes           7FF4ACCC3068 : 0              7FF4AF8A1568 : 4294967295     
+0F9C - 4 Bytes           7FF4ACCC306C : 0              7FF4AF8A156C : 4294967295     
+0FA0 - 4 Bytes           7FF4ACCC3070 : 0              7FF4AF8A1570 : 4294967295     
+0FA4 - 4 Bytes           7FF4ACCC3074 : 0              7FF4AF8A1574 : 4294967295     
+0FA8 - Pointer           7FF4ACCC3078 : P->7FF4ACCC33937FF4AF8A1578 : P->FFFFFFFFFFFFFFFF
+0FB0 - Pointer           7FF4ACCC3080 : P->14287E378   7FF4AF8A1580 : P->FFFFFFFFFFFFFFFF
+0FB8 - Pointer to instance of NS_SPRJ::PlayerIns7FF4ACCC3088 : P->7FF4ACCBEED07FF4AF8A1588 : P->FFFFFFFFFFFFFFFF
+0FC0 - 4 Bytes           7FF4ACCC3090 : 0              7FF4AF8A1590 : 4294967295     
+0FC4 - Double            7FF4ACCC3094 : -0.0078125     7FF4AF8A1594 : Nan            
+0FCC - Float             7FF4ACCC309C : -1             7FF4AF8A159C : Nan            
+0FD0 - Float             7FF4ACCC30A0 : -1             7FF4AF8A15A0 : Nan            
+0FD4 - Float             7FF4ACCC30A4 : -1             7FF4AF8A15A4 : Nan            
+0FD8 - Float             7FF4ACCC30A8 : -1             7FF4AF8A15A8 : Nan            
+0FDC - Float             7FF4ACCC30AC : -1             7FF4AF8A15AC : Nan            
+0FE0 - Float             7FF4ACCC30B0 : -1             7FF4AF8A15B0 : 0              
+0FE4 - Float             7FF4ACCC30B4 : -1             7FF4AF8A15B4 : Nan            
+0FE8 - 4 Bytes           7FF4ACCC30B8 : 0              7FF4AF8A15B8 : 4294967295     
+0FEC - Double            7FF4ACCC30BC : -0.0078125000007FF4AF8A15BC : 2.12199579096527E-308
+0FF4 - Float             7FF4ACCC30C4 : -1             7FF4AF8A15C4 : 1.401297063E-39
+0FF8 - Float             7FF4ACCC30C8 : -1             7FF4AF8A15C8 : Nan            
+0FFC - Float             7FF4ACCC30CC : -1             7FF4AF8A15CC : Nan            
