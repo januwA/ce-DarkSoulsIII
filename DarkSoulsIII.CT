@@ -191,6 +191,7 @@ setEnemyHp:
    mov [rbx+D8],killEnemy
    jmp setEnd
 
+// npc改为1，有些npc会变为敌人
 setNpcHp:
    cmp [rbx+D8],1
    je setEnd
@@ -248,14 +249,14 @@ dealloc(newmem)
         <CheatEntry>
           <ID>270</ID>
           <Description>"pos x"</Description>
-          <LastState Value="-40.09960175" RealAddress="7FF4B020C860"/>
+          <LastState Value="278.70224" RealAddress="7FF4AF1EA5C0"/>
           <VariableType>Float</VariableType>
           <Address>[imyhp2]+d8+1618</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>271</ID>
           <Description>"pos y"</Description>
-          <LastState Value="-395.5727539" RealAddress="7FF4B020C868"/>
+          <LastState Value="604.2544556" RealAddress="7FF4AF1EA5C8"/>
           <VariableType>Float</VariableType>
           <Address>[imyhp2]+d8+1618+8</Address>
         </CheatEntry>
@@ -331,7 +332,7 @@ dealloc(newmem)
     <CheatEntry>
       <ID>90</ID>
       <Description>"等级"</Description>
-      <LastState Value="0" RealAddress="7FF49E85F510"/>
+      <LastState Value="999999" RealAddress="7FF49E85F510"/>
       <VariableType>4 Bytes</VariableType>
       <Address>7FF49E85F510</Address>
     </CheatEntry>
@@ -499,6 +500,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>96</ID>
           <Description>"my current hp"</Description>
+          <LastState Value="0" RealAddress="7FF4B5D40DF8"/>
           <VariableType>4 Bytes</VariableType>
           <Address>[imyhp]+d8</Address>
         </CheatEntry>
@@ -558,14 +560,95 @@ unregistersymbol(hpregen)
         <CheatEntry>
           <ID>268</ID>
           <Description>"pos x"</Description>
+          <LastState Value="4.408171078E-39" RealAddress="7FF4B5D42410"/>
           <VariableType>Float</VariableType>
           <Address>[imyhp]+d8+1618</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>269</ID>
           <Description>"pos y"</Description>
+          <LastState Value="1.00102022E-38" RealAddress="7FF4B5D42418"/>
           <VariableType>Float</VariableType>
           <Address>[imyhp]+d8+1618+8</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>418</ID>
+      <Description>"等级"</Description>
+      <Options moHideChildren="1"/>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+aobscanmodule(level_INJECT,DarkSoulsIII.exe,49 8B CC E8 D3 EE B7 FF)
+alloc(newmem,$1000,"DarkSoulsIII.exe"+8F0B85)
+
+alloc(pLevel, $16)
+registersymbol(pLevel)
+pLevel:
+  dq 0
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  mov rcx,r12
+  mov [pLevel],rcx
+  call DarkSoulsIII.Scaleform::Render::Matrix4x4&lt;float&gt;::SetIdentity+44D0
+  jmp return
+
+level_INJECT:
+  jmp newmem
+  nop 3
+return:
+registersymbol(level_INJECT)
+
+[DISABLE]
+
+level_INJECT:
+  db 49 8B CC E8 D3 EE B7 FF
+unregistersymbol(pLevel)
+dealloc(pLevel)
+unregistersymbol(level_INJECT)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+8F0B85
+
+"DarkSoulsIII.exe"+8F0B62: 48 8D 55 D7           -  lea rdx,[rbp-29]
+"DarkSoulsIII.exe"+8F0B66: 48 8B CE              -  mov rcx,rsi
+"DarkSoulsIII.exe"+8F0B69: E8 12 E5 F8 FF        -  call DarkSoulsIII.exe+87F080
+"DarkSoulsIII.exe"+8F0B6E: 8B 00                 -  mov eax,[rax]
+"DarkSoulsIII.exe"+8F0B70: 89 45 E7              -  mov [rbp-19],eax
+"DarkSoulsIII.exe"+8F0B73: 48 8B 06              -  mov rax,[rsi]
+"DarkSoulsIII.exe"+8F0B76: 48 8B CE              -  mov rcx,rsi
+"DarkSoulsIII.exe"+8F0B79: FF 90 88 05 00 00     -  call qword ptr [rax+00000588]
+"DarkSoulsIII.exe"+8F0B7F: 0F B6 C0              -  movzx eax,al
+"DarkSoulsIII.exe"+8F0B82: 89 45 D7              -  mov [rbp-29],eax
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+8F0B85: 49 8B CC              -  mov rcx,r12
+"DarkSoulsIII.exe"+8F0B88: E8 D3 EE B7 FF        -  call DarkSoulsIII.exe+46FA60
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+8F0B8D: 44 8B E0              -  mov r12d,eax
+"DarkSoulsIII.exe"+8F0B90: 49 8B F6              -  mov rsi,r14
+"DarkSoulsIII.exe"+8F0B93: 48 8D 45 DB           -  lea rax,[rbp-25]
+"DarkSoulsIII.exe"+8F0B97: 48 89 45 CF           -  mov [rbp-31],rax
+"DarkSoulsIII.exe"+8F0B9B: 8B 4D C7              -  mov ecx,[rbp-39]
+"DarkSoulsIII.exe"+8F0B9E: 89 4D DB              -  mov [rbp-25],ecx
+"DarkSoulsIII.exe"+8F0BA1: 48 8D 55 DB           -  lea rdx,[rbp-25]
+"DarkSoulsIII.exe"+8F0BA5: 49 8B 4F 28           -  mov rcx,[r15+28]
+"DarkSoulsIII.exe"+8F0BA9: E8 22 BB D2 FF        -  call DarkSoulsIII.exe+61C6D0
+"DarkSoulsIII.exe"+8F0BAE: 49 8B 57 28           -  mov rdx,[r15+28]
+}
+</AssemblerScript>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>419</ID>
+          <Description>"level"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>[pLevel]+70</Address>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
@@ -745,13 +828,31 @@ unregistersymbol(hpregen)
         <Byte>83</Byte>
       </After>
     </CodeEntry>
+    <CodeEntry Color="80000008">
+      <Description>玩家等级</Description>
+      <AddressString>DarkSoulsIII.exe+46FA60</AddressString>
+      <Before>
+        <Byte>00</Byte>
+        <Byte>CC</Byte>
+        <Byte>CC</Byte>
+        <Byte>CC</Byte>
+        <Byte>CC</Byte>
+      </Before>
+      <Actual>
+        <Byte>8B</Byte>
+        <Byte>41</Byte>
+        <Byte>70</Byte>
+      </Actual>
+      <After>
+        <Byte>C3</Byte>
+        <Byte>45</Byte>
+        <Byte>89</Byte>
+        <Byte>82</Byte>
+        <Byte>CC</Byte>
+      </After>
+    </CodeEntry>
   </CheatCodes>
-  <UserdefinedSymbols>
-    <SymbolEntry>
-      <Name>posX</Name>
-      <Address>005C00C0</Address>
-    </SymbolEntry>
-  </UserdefinedSymbols>
+  <UserdefinedSymbols/>
   <Comments>00007FF49E860000 + 8 = 5F
 00007FF49E85FED0 + 8 = 1
   
@@ -764,6 +865,11 @@ unregistersymbol(hpregen)
       <Address>"DarkSoulsIII.exe"+451065</Address>
       <Comment>改变hp
       </Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"DarkSoulsIII.exe"+46FA60</Address>
+      <Comment>玩家等级
+</Comment>
     </DisassemblerComment>
     <DisassemblerComment>
       <Address>"DarkSoulsIII.exe"+4BAF93</Address>
