@@ -2,7 +2,7 @@
 
 [下载游戏：3DM免安装中英文豪华版](https://www.3dmgame.com/games/darksouls3/)
 
-![](./images/2020-06-18-15-18-35.png)
+![](./images/2020-06-21-15-57-06.png)
 
 注：
 - CE需要设置VEH调试器，windows调试器会被检测，游戏直接退出

@@ -1,0 +1,48 @@
+[ENABLE]
+alloc(hpregen,$1000)
+registersymbol(hpregen)
+createThread(hpregen)
+
+label(mainloop)
+label(dispose)
+label(end)
+registersymbol(end)
+
+hpregen:
+  sub rsp,20
+  jmp mainloop
+
+mainloop:
+  mov rcx,#500
+  call Sleep
+
+  push rax
+  mov rax,[imyhp]
+  add [rax+d8], #500 // hp
+  add [rax+e4], #100 // mp
+  add [rax+f0], #50  // nl
+  pop rax
+
+
+  cmp [end],0
+  je mainloop
+  jmp dispose
+
+dispose:
+  add rsp,20
+  mov rcx,hpregen
+  sub rdx,rdx
+  mov r8d,8000
+  jmp VirtualFree
+  ret
+
+end:
+  dd 0
+
+[DISABLE]
+end:
+  dd 1
+
+unregistersymbol(end)
+unregistersymbol(hpregen)
+          
