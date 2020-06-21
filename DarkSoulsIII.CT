@@ -4,14 +4,14 @@
     <CheatEntry>
       <ID>53</ID>
       <Description>"自动秒，锁hp/mp/nl"</Description>
-      <LastState Activated="1"/>
+      <LastState/>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript>[ENABLE]
 aobscanmodule(hp_INJECT,DarkSoulsIII.exe,89 83 D8 00 00 00 E9 E1)
 alloc(newmem,$1000,"DarkSoulsIII.exe"+451065)
 
 // 改为0秒杀
-define(killEnemy, 1)
+define(killEnemy, 0)
 
 label(myhp)
 label(setEnemyHp)
@@ -362,14 +362,13 @@ dealloc(newmem)
         <CheatEntry>
           <ID>419</ID>
           <Description>"level"</Description>
-          <LastState Value="0" RealAddress="7FF4B0EB2740"/>
           <VariableType>4 Bytes</VariableType>
           <Address>[pLevel]+70</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>90</ID>
           <Description>"等级"</Description>
-          <LastState Value="7667789" RealAddress="7FF49E85F510"/>
+          <LastState Value="999999" RealAddress="7FF49E85F510"/>
           <VariableType>4 Bytes</VariableType>
           <Address>7FF49E85F510</Address>
         </CheatEntry>
@@ -378,7 +377,7 @@ dealloc(newmem)
     <CheatEntry>
       <ID>420</ID>
       <Description>"免代码检测"</Description>
-      <LastState Activated="1"/>
+      <LastState/>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript>// 如果使用[材料]脚本，代码的修改会被检测到，这个脚本可以避免检测
 // see also: https://www.youtube.com/watch?v=42cIzOZPogQ&amp;list=PLszEh0IDMrCmPK-0wpe-cyu08Kj7MGYyo&amp;index=30
@@ -429,7 +428,7 @@ unregistersymbol(checkCode_INJECT)
         <CheatEntry>
           <ID>91</ID>
           <Description>"材料"</Description>
-          <LastState Activated="1"/>
+          <LastState/>
           <VariableType>Auto Assembler Script</VariableType>
           <AssemblerScript>[ENABLE]
 "DarkSoulsIII.exe"+58A296:
@@ -449,7 +448,7 @@ unregistersymbol(checkCode_INJECT)
     <CheatEntry>
       <ID>428</ID>
       <Description>"免异常"</Description>
-      <LastState Activated="1"/>
+      <LastState/>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript>[ENABLE]
 aobscanmodule(abnormal_INJECT,DarkSoulsIII.exe,45 2B C8 45 85 C9)
@@ -497,10 +496,11 @@ unregistersymbol(abnormal_INJECT)
     <CheatEntry>
       <ID>429</ID>
       <Description>"pos base"</Description>
-      <Options moHideChildren="1"/>
       <LastState Activated="1"/>
       <VariableType>Auto Assembler Script</VariableType>
-      <AssemblerScript>[ENABLE]
+      <AssemblerScript>// 将模型方向设置为0，再将镜头放在背后，设置x,y
+
+[ENABLE]
 aobscanmodule(pos_INJECT,DarkSoulsIII.exe,66 0F 7F B3 80 00 00 00 0F)
 alloc(newmem,$1000,"DarkSoulsIII.exe"+9D05F0)
 
@@ -571,30 +571,131 @@ dealloc(newmem)
         <CheatEntry>
           <ID>431</ID>
           <Description>"x"</Description>
-          <LastState Value="-53.91812897" RealAddress="7FF4B0EB2750"/>
+          <LastState Value="235.3937988" RealAddress="7FF4ACDB95F0"/>
           <VariableType>Float</VariableType>
           <Address>[pPosBase]+80</Address>
         </CheatEntry>
         <CheatEntry>
-          <ID>432</ID>
+          <ID>437</ID>
           <Description>"y"</Description>
-          <LastState Value="256.6957703" RealAddress="7FF4B0EB2758"/>
+          <LastState Value="596.5697632" RealAddress="7FF4ACDB95F8"/>
           <VariableType>Float</VariableType>
-          <Address>[pPosBase]+88</Address>
+          <Address>[pPosBase]+80+8</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>434</ID>
           <Description>"z)模型高度"</Description>
-          <LastState Value="-44.22358322" RealAddress="7FF4B0EB2754"/>
+          <LastState Value="-56.33595657" RealAddress="7FF4ACDB95F4"/>
           <VariableType>Float</VariableType>
           <Address>[pPosBase]+84</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>433</ID>
           <Description>"模型方向"</Description>
-          <LastState Value="0.2340831757" RealAddress="7FF4B0EB2744"/>
+          <LastState Value="-1.077382565" RealAddress="7FF4ACDB95E4"/>
           <VariableType>Float</VariableType>
           <Address>[pPosBase]+80-c</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>438</ID>
+          <Description>"传送)每张地图位置不同"</Description>
+          <LastState Activated="1"/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>{$lua}
+
+--[[
+  F12 保存当前定位
+  ctrl+F12 读取定位ID，并传送
+  所有配置将保存在 pos.ini 文件中
+--]]
+
+if syntaxcheck then return end
+
+INI = require "inifile"
+
+local addr = {
+  x = "[pPosBase]+80",
+  y = "[pPosBase]+88",
+  z = "[pPosBase]+84"
+}
+
+local iniFIleName = "pos.ini"
+io.close(io.open(iniFIleName,'a')) -- 文件不存在则创建
+
+
+
+local function _save(newPos)
+  local id = inputQuery('保存定位', "给这个定位设置ID",'')
+  if id == nil then return end
+
+  local posTable = INI.parse(iniFIleName)
+  posTable[id] = newPos
+  INI.save(iniFIleName, posTable)
+end
+
+-- 从内存中获取当前的位置
+local function _getPos()
+  return {
+   x = readFloat(addr['x']),
+   y = readFloat(addr['y']),
+   z = readFloat(addr['z'])
+  }
+end
+
+
+
+
+-- 传送需要获取id
+local function _getTpPos()
+  local id = inputQuery('获取定位', "输入传送定位ID",'')
+  if id == nil then return end
+
+  local posTable = INI.parse(iniFIleName)
+  if posTable[id] == nil then
+     showMessage(string.format("没有找到[%s]定位", id))
+     return
+  end
+
+  return posTable[id]
+end
+
+-- 传送将坐标写入内存
+local function _TP(pos)
+  if pos == nil then return end
+  writeFloat(addr['x'], pos['x'])
+  writeFloat(addr['y'], pos['y'])
+  writeFloat(addr['z'], pos['z'])
+end
+
+
+
+
+[ENABLE]
+
+-- 保存坐标热键 F1
+save_hk = createHotkey(function()
+
+  _save(_getPos())
+
+end, VK_F12)
+
+
+-- 传送坐标热键 ctrl+F12
+read_hk = createHotkey(function()
+
+  _TP(_getTpPos())
+
+end,VK_CONTROL, VK_F12)
+
+
+
+
+[DISABLE]
+save_hk.destroy()
+read_hk.destroy()
+
+
+</AssemblerScript>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
@@ -943,6 +1044,184 @@ dealloc(newmem)
     </CodeEntry>
   </CheatCodes>
   <UserdefinedSymbols/>
+  <Structures StructVersion="2">
+    <Structure Name="未命名的结构" AutoFill="0" AutoCreate="1" DefaultHex="0" AutoDestroy="0" DoNotSaveLocal="0" RLECompression="1" AutoCreateStructsize="4096">
+      <Elements>
+        <Element Offset="0" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="8" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of NS_SPRJ::PlayerIns" DisplayMethod="无符号整数"/>
+        <Element Offset="16" Vartype="4 Bytes" Bytesize="4" RLECount="4" DisplayMethod="无符号整数"/>
+        <Element Offset="32" Vartype="Pointer" Bytesize="8" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="48" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="72" Vartype="Unicode String" Bytesize="6" DisplayMethod="无符号整数"/>
+        <Element Offset="78" Vartype="Byte" Bytesize="1" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="80" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="88" Vartype="4 Bytes" Bytesize="4" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="96" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="104" Vartype="4 Bytes" Bytesize="4" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="112" Vartype="Pointer" Bytesize="8" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="128" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of AppMenu::FeEmergencyNotice" DisplayMethod="无符号整数"/>
+        <Element Offset="136" Vartype="Pointer" Bytesize="8" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="152" Vartype="4 Bytes" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="156" Vartype="Double" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="164" Vartype="4 Bytes" Bytesize="4" RLECount="3" DisplayMethod="无符号整数"/>
+        <Element Offset="176" Vartype="Pointer" Bytesize="8" RLECount="3" DisplayMethod="无符号整数"/>
+        <Element Offset="200" Vartype="4 Bytes" Bytesize="4" RLECount="18" DisplayMethod="无符号整数"/>
+        <Element Offset="272" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="280" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="304" Vartype="Unicode String" Bytesize="6" DisplayMethod="无符号整数"/>
+        <Element Offset="310" Vartype="Byte" Bytesize="1" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="312" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="320" Vartype="4 Bytes" Bytesize="4" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="328" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="336" Vartype="4 Bytes" Bytesize="4" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="344" Vartype="Pointer" Bytesize="8" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="360" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of AppMenu::FeEmergencyNotice" DisplayMethod="无符号整数"/>
+        <Element Offset="368" Vartype="Pointer" Bytesize="8" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="384" Vartype="4 Bytes" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="388" Vartype="Double" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="396" Vartype="4 Bytes" Bytesize="4" RLECount="3" DisplayMethod="无符号整数"/>
+        <Element Offset="408" Vartype="Pointer" Bytesize="8" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="424" Vartype="4 Bytes" Bytesize="4" RLECount="8" DisplayMethod="无符号整数"/>
+        <Element Offset="456" Vartype="Pointer" Bytesize="8" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="472" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of NS_SPRJ::PlayerIns" DisplayMethod="无符号整数"/>
+        <Element Offset="480" Vartype="4 Bytes" Bytesize="4" RLECount="10" DisplayMethod="无符号整数"/>
+        <Element Offset="520" Vartype="Float" Bytesize="4" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="528" Vartype="Double" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="536" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="544" Vartype="4 Bytes" Bytesize="4" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="552" Vartype="Pointer" Bytesize="8" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="568" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of NS_SPRJ::PlayerIns" DisplayMethod="无符号整数"/>
+        <Element Offset="576" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="584" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of NS_SPRJ::SprjBehaviorCharacterProxyDriver" DisplayMethod="无符号整数"/>
+        <Element Offset="592" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of NS_SPRJ::CSBehRaycastInterface" DisplayMethod="无符号整数"/>
+        <Element Offset="600" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of NS_SPRJ::SprjFD4LocationHkaPoseImporter" DisplayMethod="无符号整数"/>
+        <Element Offset="608" Vartype="4 Bytes" Bytesize="4" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="616" Vartype="Double" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="624" Vartype="4 Bytes" Bytesize="4" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="632" Vartype="Double" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="640" Vartype="Float" Bytesize="4" RLECount="3" DisplayMethod="无符号整数"/>
+        <Element Offset="652" Vartype="4 Bytes" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="656" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="664" Vartype="4 Bytes" Bytesize="4" RLECount="162" DisplayMethod="无符号整数"/>
+        <Element Offset="1312" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="1320" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="1344" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="1352" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="1376" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="1384" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="1408" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="1416" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="1440" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="1448" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="1472" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="1480" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="1504" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="1512" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="1536" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="1544" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="1568" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="1576" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="1600" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="1608" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="1632" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="1640" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="1664" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="1672" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="1696" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="1704" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="1728" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="1736" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="1760" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="1768" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="1792" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="1800" Vartype="4 Bytes" Bytesize="4" RLECount="222" DisplayMethod="无符号整数"/>
+        <Element Offset="2688" Vartype="Pointer" Bytesize="8" RLECount="3" DisplayMethod="无符号整数"/>
+        <Element Offset="2712" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of DLKRD::HeapAllocator&lt;DLKR::DLDynamicHeap&lt;DLKR::DLBiHeapStrategy&lt;DLKR::DLRobustHeap,DLKR::DLMultiThreadingPolicy&gt; &gt; &gt;" DisplayMethod="无符号整数"/>
+        <Element Offset="2720" Vartype="4 Bytes" Bytesize="4" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="2728" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="2736" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="2760" Vartype="Unicode String" Bytesize="5" DisplayMethod="无符号整数"/>
+        <Element Offset="2765" Vartype="Byte" Bytesize="1" RLECount="3" DisplayMethod="无符号整数"/>
+        <Element Offset="2768" Vartype="4 Bytes" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="2772" Vartype="Unicode String" Bytesize="14" DisplayMethod="无符号整数"/>
+        <Element Offset="2786" Vartype="Unicode String" Bytesize="7" DisplayMethod="无符号整数"/>
+        <Element Offset="2793" Vartype="Byte" Bytesize="1" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="2795" Vartype="2 Bytes" Bytesize="2" DisplayMethod="无符号整数"/>
+        <Element Offset="2797" Vartype="Byte" Bytesize="1" RLECount="3" DisplayMethod="无符号整数"/>
+        <Element Offset="2800" Vartype="4 Bytes" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="2804" Vartype="Unicode String" Bytesize="5" DisplayMethod="无符号整数"/>
+        <Element Offset="2809" Vartype="Byte" Bytesize="1" RLECount="3" DisplayMethod="无符号整数"/>
+        <Element Offset="2812" Vartype="4 Bytes" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="2816" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="2824" Vartype="4 Bytes" Bytesize="4" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="2832" Vartype="Pointer" Bytesize="8" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="2848" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of AppMenu::FeEmergencyNotice" DisplayMethod="无符号整数"/>
+        <Element Offset="2856" Vartype="Pointer" Bytesize="8" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="2872" Vartype="4 Bytes" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="2876" Vartype="Double" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="2884" Vartype="4 Bytes" Bytesize="4" RLECount="7" DisplayMethod="无符号整数"/>
+        <Element Offset="2912" Vartype="Byte" Bytesize="1" RLECount="4" DisplayMethod="无符号整数"/>
+        <Element Offset="2916" Vartype="4 Bytes" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="2920" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="2928" Vartype="4 Bytes" Bytesize="4" RLECount="6" DisplayMethod="无符号整数"/>
+        <Element Offset="2952" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of DLKRD::HeapAllocator&lt;DLKR::DLDynamicHeap&lt;DLKR::DLBiHeapStrategy&lt;DLKR::DLRobustHeap,DLKR::DLMultiThreadingPolicy&gt; &gt; &gt;" DisplayMethod="无符号整数"/>
+        <Element Offset="2960" Vartype="Float" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="2964" Vartype="4 Bytes" Bytesize="4" RLECount="37" DisplayMethod="无符号整数"/>
+        <Element Offset="3112" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of NS_SPRJ::HvkAnim" DisplayMethod="无符号整数"/>
+        <Element Offset="3120" Vartype="Pointer" Bytesize="8" RLECount="3" DisplayMethod="无符号整数"/>
+        <Element Offset="3144" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of DLKRD::HeapAllocator&lt;DLKR::DLDynamicHeap&lt;DLKR::DLBiHeapStrategy&lt;DLKR::DLRobustHeap,DLKR::DLMultiThreadingPolicy&gt; &gt; &gt;" DisplayMethod="无符号整数"/>
+        <Element Offset="3152" Vartype="4 Bytes" Bytesize="4" RLECount="4" DisplayMethod="无符号整数"/>
+        <Element Offset="3168" Vartype="Pointer" Bytesize="8" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="3184" Vartype="4 Bytes" Bytesize="4" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="3192" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of CustomManualSelectorGenerator" DisplayMethod="无符号整数"/>
+        <Element Offset="3200" Vartype="Float" Bytesize="4" RLECount="3" DisplayMethod="无符号整数"/>
+        <Element Offset="3212" Vartype="4 Bytes" Bytesize="4" RLECount="13" DisplayMethod="无符号整数"/>
+        <Element Offset="3264" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of DLKRD::HeapAllocator&lt;DLKR::Win32RuntimeHeapImpl&gt;" DisplayMethod="无符号整数"/>
+        <Element Offset="3272" Vartype="4 Bytes" Bytesize="4" RLECount="10" DisplayMethod="无符号整数"/>
+        <Element Offset="3312" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of DLKRD::HeapAllocator&lt;DLKR::DLDynamicHeap&lt;DLKR::DLDefaultHeapStrategy&lt;DLKR::DLSmallObjectHeapWrapper&lt;DLKR::DLRobustHeap,0,16384,256,16&gt;,DLKR::DLMultiThreadingPolicy&gt; &gt; &gt;" DisplayMethod="无符号整数"/>
+        <Element Offset="3320" Vartype="4 Bytes" Bytesize="4" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="3328" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="3336" Vartype="4 Bytes" Bytesize="4" RLECount="8" DisplayMethod="无符号整数"/>
+        <Element Offset="3368" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of DLKRD::HeapAllocator&lt;DLKR::DLDynamicHeap&lt;DLKR::DLDefaultHeapStrategy&lt;DLKR::DLSmallObjectHeapWrapper&lt;DLKR::DLRobustHeap,0,16384,256,16&gt;,DLKR::DLMultiThreadingPolicy&gt; &gt; &gt;" DisplayMethod="无符号整数"/>
+        <Element Offset="3376" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="3384" Vartype="4 Bytes" Bytesize="4" RLECount="8" DisplayMethod="无符号整数"/>
+        <Element Offset="3416" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of DLKRD::HeapAllocator&lt;DLKR::DLDynamicHeap&lt;DLKR::DLDefaultHeapStrategy&lt;DLKR::DLSmallObjectHeapWrapper&lt;DLKR::DLRobustHeap,0,16384,256,16&gt;,DLKR::DLMultiThreadingPolicy&gt; &gt; &gt;" DisplayMethod="无符号整数"/>
+        <Element Offset="3424" Vartype="4 Bytes" Bytesize="4" RLECount="8" DisplayMethod="无符号整数"/>
+        <Element Offset="3456" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of DLKRD::HeapAllocator&lt;DLKR::DLDynamicHeap&lt;DLKR::DLDefaultHeapStrategy&lt;DLKR::DLSmallObjectHeapWrapper&lt;DLKR::DLRobustHeap,0,16384,256,16&gt;,DLKR::DLMultiThreadingPolicy&gt; &gt; &gt;" DisplayMethod="无符号整数"/>
+        <Element Offset="3464" Vartype="4 Bytes" Bytesize="4" RLECount="4" DisplayMethod="无符号整数"/>
+        <Element Offset="3480" Vartype="Pointer" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="3488" Vartype="4 Bytes" Bytesize="4" RLECount="3" DisplayMethod="无符号整数"/>
+        <Element Offset="3500" Vartype="Double" Bytesize="8" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="3516" Vartype="Float" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="3520" Vartype="Double" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="3528" Vartype="4 Bytes" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="3532" Vartype="Float" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="3536" Vartype="String" Bytesize="5" DisplayMethod="无符号整数"/>
+        <Element Offset="3541" Vartype="Byte" Bytesize="1" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="3543" Vartype="2 Bytes" Bytesize="2" DisplayMethod="无符号整数"/>
+        <Element Offset="3545" Vartype="Byte" Bytesize="1" RLECount="3" DisplayMethod="无符号整数"/>
+        <Element Offset="3548" Vartype="Float" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="3552" Vartype="4 Bytes" Bytesize="4" RLECount="3" DisplayMethod="无符号整数"/>
+        <Element Offset="3564" Vartype="Double" Bytesize="8" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="3580" Vartype="Float" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="3584" Vartype="Double" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="3592" Vartype="4 Bytes" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="3596" Vartype="Float" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="3600" Vartype="String" Bytesize="5" DisplayMethod="无符号整数"/>
+        <Element Offset="3605" Vartype="Byte" Bytesize="1" RLECount="3" DisplayMethod="无符号整数"/>
+        <Element Offset="3608" Vartype="Float" Bytesize="4" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="3616" Vartype="4 Bytes" Bytesize="4" RLECount="98" DisplayMethod="无符号整数"/>
+        <Element Offset="4008" Vartype="Pointer" Bytesize="8" RLECount="2" DisplayMethod="无符号整数"/>
+        <Element Offset="4024" Vartype="Pointer" Bytesize="8" Description="Pointer to instance of NS_SPRJ::PlayerIns" DisplayMethod="无符号整数"/>
+        <Element Offset="4032" Vartype="Float" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="4036" Vartype="Double" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="4044" Vartype="Float" Bytesize="4" RLECount="7" DisplayMethod="无符号整数"/>
+        <Element Offset="4072" Vartype="4 Bytes" Bytesize="4" DisplayMethod="无符号整数"/>
+        <Element Offset="4076" Vartype="Double" Bytesize="8" DisplayMethod="无符号整数"/>
+        <Element Offset="4084" Vartype="Float" Bytesize="4" RLECount="3" DisplayMethod="无符号整数"/>
+      </Elements>
+    </Structure>
+  </Structures>
   <Comments>00007FF49E860000 + 8 = 5F
 00007FF49E85FED0 + 8 = 1
   
